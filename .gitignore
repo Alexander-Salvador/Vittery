@@ -1,0 +1,162 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+yarn.lock
+package-lock.json
+
+# Testing
+/coverage
+/junit.xml
+
+# Production
+/build
+/dist
+/out
+/.next
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# IDE specific files
+.idea
+.vscode
+*.swp
+*.swo
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Storybook build outputs
+storybook-static
+
+# Local Netlify folder
+.netlify
+
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+
+# IDEs Y Proyectos
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.code-workspace
+
+# Logs Y Depuración
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.tgz
+
+# Dependencias
+node_modules/
+jspm_packages/
+
+# Distribución Y Construcción
+dist/
+build/
+out/
+.temp/
+.parcel-cache/
+.next/
+.nuxt/
+.docusaurus/
+.serverless/
+.fusebox/
+
+# Archivos De Configuración (locales)
+.npmrc
+.env*
+!.env.example
+*.local
+*.pid
+*.pid.lock
+
+# Cobertura Y Pruebas
+coverage/
+*.lcov
+c_output/
+jest-html-reporters-*.html
+jest-results.json
+
+# Archivos Temporales
+*.tmp
+*.temp
+*.bak
+
+# Archivos De Configuración De Herramientas
+.prettierignore
+.eslintcache
+.stylelintcache
+.vite.config.*
+eslint.config.*
+*.tsbuildinfo
+*.map
+
+# Archivos De Bloqueo (si Solo Usas pnpm)
+pnpm-lock.yaml
+
+# Si no Usas Yarn Ni Npm, Elimina Los Siguientes:
+yarn.lock
+package-lock.json
+
+# Git
+*.orig
+
+# Otros
+.DS_Store
+Thumbs.db
