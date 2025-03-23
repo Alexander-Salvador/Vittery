@@ -1,10 +1,13 @@
 import Header from './Components/Header/Header.jsx';
 import './App.css';
-
+import HomePage from './Components/HomePage/HomePage';
 function App() {
   return (
     <>
-      <Header />
+      <section className="app">
+        <Header />
+        <HomePage />
+      </section>
     </>
   );
 }

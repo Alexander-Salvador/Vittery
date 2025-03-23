@@ -1,0 +1,16 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  background-image: url('https://i.ibb.co/hx9YFmbD/pexels-shvetsa-3962285.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner__title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
