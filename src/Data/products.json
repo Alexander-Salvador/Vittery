@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone X",
+    "price": 999.99,
+    "category": "tecnologia",
+    "description": "Último modelo con cámara de 108MP",
+    "image": "public/images/products/frutas-cerezas.webp",
+    "stock": 50,
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Sofá Moderno",
+    "price": 450.0,
+    "category": "hogar",
+    "description": "Sofá de tela resistente, color gris",
+    "image": "public/images/products/frutas-cerezas.webp",
+    "stock": 15,
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "Zapatos Deportivos",
+    "price": 120.5,
+    "category": "ropa",
+    "description": "Zapatos ligeros para running",
+    "image": "public/images/products/frutas-cerezas.webp",
+    "stock": 30,
+    "rating": 4.7
+  }
+]

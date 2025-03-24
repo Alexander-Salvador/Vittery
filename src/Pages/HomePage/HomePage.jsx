@@ -1,4 +1,4 @@
-import Banner from '../HomePage/Banner/Banner';
+import Banner from '../../Components/Banner/Banner';
 import './HomePage.css';
 
 const HomePage = () => {
