@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Macbook Pro",
+    "price": 999.99,
+    "category": "tecnologia",
+    "description": "Último modelo con cámara de 108MP",
+    "image": "public/images/products/tecnologia-laptop.webp",
+    "stock": 50,
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Camisa Lacoste",
+    "price": 450.0,
+    "category": "ropa",
+    "description": "Camisa de tela resistente, color gris",
+    "image": "public/images/products/ropa-hombre.jpeg",
+    "stock": 15,
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "Limpiador de pisos",
+    "price": 120.5,
+    "category": "hogar",
+    "description": "Limpiador de pisos para todo tipo de superficies",
+    "image": "public/images/products/hogar-limpieza.webp",
+    "stock": 30,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Zapatos Deportivos",
+    "price": 120.5,
+    "category": "ropa",
+    "description": "Zapatos ligeros para running",
+    "image": "public/images/products/frutas-cerezas.webp",
+    "stock": 20,
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "name": "Zapatos Deportivos",
+    "price": 120.5,
+    "category": "ropa",
+    "description": "Zapatos ligeros para running",
+    "image": "public/images/products/frutas-cerezas.webp",
+    "stock": 20,
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "name": "Zapatos Deportivos",
+    "price": 120.5,
+    "category": "frutas",
+    "description": "Frutas frescas",
+    "image": "public/images/products/frutas-cerezas.webp",
+    "stock": 20,
+    "rating": 4.6
+  }
+]
