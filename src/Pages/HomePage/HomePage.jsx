@@ -1,5 +1,6 @@
 import Banner from '../../Components/Banner/Banner';
 import ProductCard from '../../Components/ProductCard/ProductCard';
+
 import './HomePage.css';
 
 const HomePage = () => {

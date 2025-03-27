@@ -35,7 +35,7 @@
     "price": 120.5,
     "category": "ropa",
     "description": "Zapatos ligeros para running",
-    "image": "public/images/products/frutas-cerezas.webp",
+    "image": "images/products/frutas-cerezas.webp",
     "stock": 20,
     "rating": 4.6
   },
@@ -45,7 +45,7 @@
     "price": 120.5,
     "category": "ropa",
     "description": "Zapatos ligeros para running",
-    "image": "public/images/products/frutas-cerezas.webp",
+    "image": "images/products/frutas-cerezas.webp",
     "stock": 20,
     "rating": 4.6
   },
@@ -55,7 +55,7 @@
     "price": 120.5,
     "category": "frutas",
     "description": "Frutas frescas",
-    "image": "public/images/products/frutas-cerezas.webp",
+    "image": "images/products/frutas-cerezas.webp",
     "stock": 20,
     "rating": 4.6
   }

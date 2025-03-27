@@ -1,0 +1,95 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #7dbeff;
+  border-top: 1px solid #ccc;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #848383;
+  font-family: system-ui;
+  font-weight: 500;
+}
+
+/* FOOTER SERVICIO AL CLIENTE */
+
+.footer__nav-servicio-al-cliente {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav-servicio-al-cliente-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer__nav-servicio-al-cliente-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* FOOTER MI CUENTA */
+
+.footer__nav-mi-cuenta {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav-mi-cuenta-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer__nav-mi-cuenta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer__nav-mi-cuenta-list-item {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #848383;
+}
+
+/* FOOTER NUESTRAS EMPRESAS */
+
+.footer__nav-nuestras-empresas {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__nav-nuestras-empresas-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* footer__copyright */
+
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer__copyright-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footer__copyright-nav-item {
+  font-size: 1rem;
+  font-weight: 500;
+}
