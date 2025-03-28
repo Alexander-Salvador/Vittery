@@ -5,7 +5,7 @@
     "price": 999.99,
     "category": "tecnologia",
     "description": "Último modelo con cámara de 108MP",
-    "image": "public/images/products/tecnologia-laptop.webp",
+    "image": "images/products/tecnologia-laptop.webp",
     "stock": 50,
     "rating": 4.8
   },
@@ -15,7 +15,7 @@
     "price": 450.0,
     "category": "ropa",
     "description": "Camisa de tela resistente, color gris",
-    "image": "public/images/products/ropa-hombre.jpeg",
+    "image": "images/products/ropa-hombre.jpeg",
     "stock": 15,
     "rating": 4.5
   },
@@ -25,7 +25,7 @@
     "price": 120.5,
     "category": "hogar",
     "description": "Limpiador de pisos para todo tipo de superficies",
-    "image": "public/images/products/hogar-limpieza.webp",
+    "image": "images/products/hogar-limpieza.webp",
     "stock": 30,
     "rating": 4.7
   },
