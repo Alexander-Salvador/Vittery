@@ -1,15 +1,27 @@
 import { useState, useEffect } from 'react';
 import './ProductCard.css';
 
-const ProductCard = ({}) => {
-  const [products, setProduct] = useState([]);
+const ProductCard = ({ categoryFilter = 'all' }) => {
+  const [products, setProducts] = useState([]);
+
+  // Función temporal que no hace nada hasta implementar la lógica
+  const addToCart = () => {
+    console.log('Función addToCart no implementada aún');
+  };
 
   useEffect(() => {
-    fetch('products.json')
+    fetch('/products.json')
       .then((res) => res.json())
-      .then((data) => setProduct(data));
+      .then((data) => setProducts(data));
   }, []);
-  return products.map((product) => {
+
+  // Filtrar productos por categoría si se proporciona un filtro
+  const filteredProducts =
+    categoryFilter === 'all'
+      ? products
+      : products.filter((product) => product.category === categoryFilter);
+
+  return filteredProducts.map((product) => {
     return (
       <div key={product.id} className="product-card">
         <img
@@ -41,7 +53,11 @@ const ProductCard = ({}) => {
         </div>
 
         <div className="product-card-button-container">
-          <button className="product-card-button">Agregar al carrito</button>
+          <button
+            className="product-card-button"
+            onClick={() => addToCart(product)}>
+            Agregar al carrito
+          </button>
         </div>
       </div>
     );

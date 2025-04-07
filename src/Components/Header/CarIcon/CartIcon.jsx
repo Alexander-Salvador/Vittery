@@ -6,7 +6,7 @@ const CartIcon = () => {
   return (
     <Link to="/cart" className="cart-icon">
       <FaShoppingCart className="cart-icon__icon" />
-      <span className="cart-icon__text">Carrito</span>
+      <span className="cart-icon__text"></span>
     </Link>
   );
 };

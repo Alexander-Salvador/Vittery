@@ -1,16 +1,15 @@
-import Header from './Components/Header/Header.jsx';
-import HomePage from './Pages/HomePage/HomePage.jsx';
-import Footer from './Pages/Footer/Footer.jsx';
-import { CartProvider } from './Context/CartContext';
+import AppRouter from './Routes/AppRouter';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
   return (
-    <CartProvider>
+    <>
       <Header />
-      <HomePage />
+      <AppRouter />
       <Footer />
-    </CartProvider>
+    </>
   );
 }
 

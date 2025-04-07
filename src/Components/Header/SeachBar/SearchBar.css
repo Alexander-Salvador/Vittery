@@ -16,7 +16,7 @@
   font-size: 16px;
 }
 .search-bar__input {
-  width: 50rem;
+  width: 9rem;
   height: 2.5rem;
   border: none;
   border-radius: 10px;
@@ -24,6 +24,7 @@
   font-size: 12px;
   font-weight: 500;
   color: #4f4f50;
+  background-color: rgb(223, 150, 150);
 }
 
 .search-bar__input::placeholder {

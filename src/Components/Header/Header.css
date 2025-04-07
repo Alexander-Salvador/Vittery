@@ -5,14 +5,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #7dbeff;
+  background-color: #f2f4ee;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 1rem;
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
+.header__dropdown-menu {
+  display: none;
 }
 
 .header__cart-icon {

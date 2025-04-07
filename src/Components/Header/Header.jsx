@@ -3,16 +3,21 @@ import SearchBar from './SeachBar/SearchBar';
 import Logo from './Logo/Logo';
 import CartIcon from './CarIcon/CartIcon';
 import AuthButtons from './AuthButtons/AuthButtons';
+import NavMenu from './NavMenu/NavMenu';
 import './Header.css';
 
 const Header = () => {
   return (
     <>
       <header className="header">
-        <Logo />
-        <nav className="header__nav">
+        <nav className="header__dropdown-menu">
           <DropdownMenu />
         </nav>
+        <nav className="header-nav-menu">
+          <NavMenu />
+        </nav>
+
+        <Logo />
         <div className="header__search-bar">
           <SearchBar />
         </div>
