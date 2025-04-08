@@ -7,7 +7,7 @@ const AuthButtons = () => {
     <div className="auth-buttons">
       <Link to="/login" className="auth-buttons__link">
         <FaUser className="auth-buttons__icon" />
-        <span className="auth-buttons__text">Iniciar sesión</span>
+        <span className="auth-buttons__text"></span>
       </Link>
     </div>
   );

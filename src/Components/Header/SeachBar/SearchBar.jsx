@@ -5,7 +5,11 @@ const SearchBar = () => {
   return (
     <form className="search-bar">
       <FaSearch className="search-bar__icon" />
-      <input className="search-bar__input" type="text" />
+      <input
+        className="search-bar__input"
+        placeholder="Buscar productos..."
+        type="text"
+      />
     </form>
   );
 };

@@ -1,21 +1,42 @@
-.header {
+.header_container {
   width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #f2f4ee;
+  background-color: #fffff2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 1rem;
+}
+
+.header-left-items {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right-items {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.header__mid-separator {
+  display: flex;
+  width: 20%;
+  align-items: end;
+  justify-content: center;
 }
 
 .header__dropdown-menu {
   display: none;
 }
 
-.header__cart-icon {
+/* .header__cart-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */

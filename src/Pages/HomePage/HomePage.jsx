@@ -6,7 +6,9 @@ import './HomePage.css';
 const HomePage = () => {
   return (
     <div className="home-page">
-      <Banner />
+      <div className="banner-container">
+        <Banner />
+      </div>
       <div className="product-card-container">
         <ProductCard />
       </div>

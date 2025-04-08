@@ -2,7 +2,7 @@
 }
 
 .auth-buttons__link {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -12,7 +12,7 @@
   border: none;
   border-radius: 4px;
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .auth-buttons__link:hover {

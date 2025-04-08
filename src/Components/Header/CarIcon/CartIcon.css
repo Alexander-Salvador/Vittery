@@ -1,15 +1,15 @@
 .cart-icon {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #5e5d5d;
   text-decoration: none;
-  place-items: center;
+  place-items: center; */
 }
 
 .cart-icon__icon {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
