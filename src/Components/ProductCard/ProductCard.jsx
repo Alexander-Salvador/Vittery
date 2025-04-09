@@ -23,15 +23,18 @@ const ProductCard = ({ categoryFilter = 'all' }) => {
 
   return filteredProducts.map((product) => {
     return (
-      <div key={product.id} className="product-card">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="product-card-image"
-        />
-        <h3 className="product-card-title">{product.name}</h3>
+      <div className="products-container">
+        
+        <div key={product.id} className="product-card-top">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="product-card-image"
+          />
+        </div>
 
-        <div className="product-card-price-container-online">
+        <div className="product-card-bottom">
+          <h3 className="product-card-title">{product.name}</h3>
           <p className="product-card-price-online">Precio Online</p>
 
           <span className="product-card-price-online-value-online">
@@ -40,9 +43,7 @@ const ProductCard = ({ categoryFilter = 'all' }) => {
             </span>
             {product.price}
           </span>
-        </div>
 
-        <div className="product-card-price-container-normal">
           <p className="product-card-price-normal">Precio Normal</p>
           <span className="product-card-price-normal-value-normal">
             <span className="product-card-price-normal-value-normal-symbol">
@@ -50,9 +51,7 @@ const ProductCard = ({ categoryFilter = 'all' }) => {
             </span>
             {product.price}
           </span>
-        </div>
 
-        <div className="product-card-button-container">
           <button
             className="product-card-button"
             onClick={() => addToCart(product)}>

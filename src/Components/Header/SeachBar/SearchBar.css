@@ -1,0 +1,22 @@
+.search-bar__container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-bar__icon {
+}
+
+.search-bar__input {
+  margin-right: -25px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: wheat;
+}
+
+.search-bar__input:focus {
+  outline: none;
+}

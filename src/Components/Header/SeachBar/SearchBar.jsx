@@ -3,7 +3,7 @@ import './SearchBar.css';
 
 const SearchBar = () => {
   return (
-    <form className="search-bar">
+    <form className="search-bar__container">
       <FaSearch className="search-bar__icon" />
       <input
         className="search-bar__input"
