@@ -1,62 +1,95 @@
 [
   {
     "id": 1,
-    "name": "Macbook Pro",
-    "price": 999.99,
+    "name": "Macbook Pro M3",
     "category": "tecnologia",
-    "description": "Último modelo con cámara de 108MP",
+    "description": "Último modelo con chip M3 y pantalla retina",
     "image": "images/products/tecnologia-laptop.webp",
     "stock": 50,
-    "rating": 4.8
+    "rating": 4.8,
+    "isOffer": false,
+    "originalPrice": 1299.99,
+    "discountPrice": 999.99
   },
   {
     "id": 2,
-    "name": "Camisa Lacoste",
-    "price": 450.0,
+    "name": "Camisa Lacoste Gris",
     "category": "ropa",
     "description": "Camisa de tela resistente, color gris",
     "image": "images/products/ropa-hombre.jpeg",
     "stock": 15,
-    "rating": 4.5
+    "rating": 4.5,
+    "isOffer": true,
+    "offerPrice": 450.0
   },
   {
     "id": 3,
-    "name": "Limpiador de pisos",
-    "price": 120.5,
+    "name": "Limpiador de pisos multiuso",
     "category": "hogar",
-    "description": "Limpiador de pisos para todo tipo de superficies",
+    "description": "Para todo tipo de superficies con aroma cítrico",
     "image": "images/products/hogar-limpieza.webp",
     "stock": 30,
-    "rating": 4.7
+    "rating": 4.7,
+    "isOffer": false,
+    "originalPrice": 180.0,
+    "discountPrice": 120.5
   },
   {
     "id": 4,
-    "name": "Zapatos Deportivos",
-    "price": 120.5,
+    "name": "Zapatos Nike Running",
     "category": "ropa",
-    "description": "Zapatos ligeros para running",
-    "image": "images/products/frutas-cerezas.webp",
+    "description": "Zapatos deportivos ultraligeros para correr",
+    "image": "images/products/ropa-zapatos.webp",
     "stock": 20,
-    "rating": 4.6
+    "rating": 4.6,
+    "isOffer": false,
+    "originalPrice": 200.0,
+    "discountPrice": 120.5
   },
   {
     "id": 5,
-    "name": "Zapatos Deportivos",
-    "price": 120.5,
-    "category": "ropa",
-    "description": "Zapatos ligeros para running",
+    "name": "Paquete de Frutas Frescas",
+    "category": "frutas",
+    "description": "Cerezas recién cosechadas",
     "image": "images/products/frutas-cerezas.webp",
-    "stock": 20,
-    "rating": 4.6
+    "stock": 40,
+    "rating": 4.9,
+    "isOffer": true,
+    "offerPrice": 90.0
   },
   {
     "id": 6,
-    "name": "Zapatos Deportivos",
-    "price": 120.5,
-    "category": "frutas",
-    "description": "Frutas frescas",
-    "image": "images/products/frutas-cerezas.webp",
-    "stock": 20,
-    "rating": 4.6
+    "name": "Smart TV 50'' 4K UHD",
+    "category": "tecnologia",
+    "description": "Pantalla 4K con sistema Android TV",
+    "image": "images/products/tecnologia-tv.webp",
+    "stock": 25,
+    "rating": 4.4,
+    "isOffer": false,
+    "originalPrice": 1200.0,
+    "discountPrice": 850.0
+  },
+  {
+    "id": 7,
+    "name": "Zapatillas Adidas Classic",
+    "category": "ropa",
+    "description": "Zapatillas para uso diario",
+    "image": "images/products/ropa-zapatillas.webp",
+    "stock": 12,
+    "rating": 4.2,
+    "isOffer": true,
+    "offerPrice": 320.0
+  },
+  {
+    "id": 8,
+    "name": "Lavadora LG 16kg",
+    "category": "electrodomésticos",
+    "description": "Carga superior con tecnología TurboWash",
+    "image": "images/products/electrodomesticos-lavadora.webp",
+    "stock": 10,
+    "rating": 4.6,
+    "isOffer": false,
+    "originalPrice": 1500.0,
+    "discountPrice": 1350.0
   }
 ]
