@@ -1,4 +1,4 @@
-.products-container {
+.products-card {
   display: grid;
   height: 400px;
   grid-template-columns: repeat(1, 1fr);
@@ -15,8 +15,8 @@
 }
 
 .product-card-image {
-  width: 70%;
-  height: 180px;
+  width: 60px;
+  height: 60px;
   border-radius: 4px;
 }
 

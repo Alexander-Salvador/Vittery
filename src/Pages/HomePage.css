@@ -10,10 +10,6 @@
   width: 80%;
 }
 
-.product-card-container {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+.Product-container {
+  width: 1240px;
 }

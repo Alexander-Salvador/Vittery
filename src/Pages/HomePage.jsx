@@ -1,4 +1,5 @@
 import Banner from '../Components/Banner/Banner';
+import ProductSection from './Products/ProductSection';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -7,6 +8,9 @@ const HomePage = () => {
       <div className="banner-container">
         <Banner />
       </div>
+      {/* <div className="Product-container">
+        <ProductSection />
+      </div> */}
     </div>
   );
 };
