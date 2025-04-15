@@ -2,14 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
   background-color: #fffff2;
 }
 
 .banner-container {
-  width: 80%;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.Product-container {
-  width: 1240px;
+.Products-offer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Products-offer-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
 }

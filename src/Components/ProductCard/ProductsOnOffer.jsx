@@ -1,21 +1,44 @@
 import './ProductsOnOffer.css';
+import useProductOffer from '../../hooks/Products/useProductOffer';
 
-const ProductsOnOffer = ({ product }) => {
+const ProductsOnOffer = () => {
+  const { offers, loading, error } = useProductOffer();
+
+  if (loading) return <p>Cargando productos en oferta...</p>;
+  if (error) return <p>Error: {error}</p>;
+  if (!offers || offers.length === 0) {
+    return <p>No hay productos en oferta en este momento.</p>;
+  }
+
   return (
     <div className="productsOffer-container">
-      {products.map((product) => (
-        <div className="product-card" key={products.id}>
+      {offers.map((product) => (
+        <div className="product-card" key={product.id}>
           <div className="product-card-top">
             <img
-              src={products.image}
-              alt={products.name}
+              src={product.image}
+              alt={product.name}
               className="product-card-image"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = '/placeholder.jpg';
+              }}
             />
           </div>
 
           <div className="product-card-bottom">
-            <span>{products.name}</span>
-            <p>Precio: ${products.offerPrice}</p>
+            <span className="product-name">{product.name}</span>
+            <div className="product-prices">
+              <p className="original-price">
+                Precio Normal: ${product.originalPrice}
+              </p>
+              <p className="offer-price">
+                Precio Oferta: ${product.price}
+              </p>
+              <p className="discount">
+                {product.discountPercent}% OFF
+              </p>
+            </div>
           </div>
         </div>
       ))}
