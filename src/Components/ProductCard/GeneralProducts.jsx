@@ -1,5 +1,4 @@
 import './GeneralProducts.css';
-import PropTypes from 'prop-types';
 
 const GeneralProducts = ({ product }) => {
   if (!product) return null;
@@ -40,14 +39,6 @@ const GeneralProducts = ({ product }) => {
       </div>
     </div>
   );
-};
-
-GeneralProducts.propTypes = {
-  product: PropTypes.shape({
-    image: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired
-  }).isRequired
 };
 
 export default GeneralProducts;

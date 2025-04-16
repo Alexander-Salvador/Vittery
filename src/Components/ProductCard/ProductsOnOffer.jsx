@@ -28,16 +28,16 @@ const ProductsOnOffer = () => {
 
           <div className="product-card-bottom">
             <span className="product-name">{product.name}</span>
-            <div className="product-prices">
-              <p className="original-price">
-                Precio Normal: ${product.originalPrice}
-              </p>
-              <p className="offer-price">
-                Precio Oferta: ${product.price}
-              </p>
-              <p className="discount">
-                {product.discountPercent}% OFF
-              </p>
+            <div className="product-card-bottom-flex">
+              <div className="product-buy-button">
+                <button className="button-buy-now">Agregar</button>
+              </div>
+              <div className="product-prices">
+                <p className="offer-price">
+                  <span className="product-span-price"> Oferta:</span> S/.
+                  {product.price}
+                </p>
+              </div>
             </div>
           </div>
         </div>
