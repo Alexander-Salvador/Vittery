@@ -52,16 +52,27 @@
 }
 
 .button-buy-now {
-  background-color: #193a3f;
-  color: rgb(228, 228, 228);
-  border: none;
-  padding: 0.3rem 0.8rem;
-  border-radius: 10px;
+  background-color: #ffffff;
+  color: #cb4621;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
   cursor: pointer;
+  border: solid 1px #e32817;
   font-size: 0.8rem;
   font-weight: bold;
   font-family: system-ui;
-  transition: background-color 0.3s;
+  transition: background-color 0.4s;
+}
+/* 193a3f */
+.button-buy-now:hover {
+  background-color: #e41e31;
+  color: #ffffff;
+}
+.button-buy-now:active {
+  background-color: #e41e31;
+}
+.button-buy-now:focus {
+  outline: none;
 }
 
 .product-span-price {

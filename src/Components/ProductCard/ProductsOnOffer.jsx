@@ -30,7 +30,7 @@ const ProductsOnOffer = () => {
             <span className="product-name">{product.name}</span>
             <div className="product-card-bottom-flex">
               <div className="product-buy-button">
-                <button className="button-buy-now">Agregar</button>
+                <button className="button-buy-now">Comprar</button>
               </div>
               <div className="product-prices">
                 <p className="offer-price">
