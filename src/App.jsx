@@ -6,9 +6,11 @@ import './App.css';
 function App() {
   return (
     <>
-      <Header />
-      <AppRouter />
-      <Footer />
+      <div className="app">
+        <Header />
+        <AppRouter />
+        <Footer />
+      </div>
     </>
   );
 }

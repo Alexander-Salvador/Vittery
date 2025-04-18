@@ -2,7 +2,7 @@ import './ProductsOnOffer.css';
 import useProductOffer from '../../hooks/Products/useProductOffer';
 
 const ProductsOnOffer = () => {
-  const { offers, loading, error } = useProductOffer();
+  const { offers, loading, error } = useProductOffer(3);
 
   if (loading) return <p>Cargando productos en oferta...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -15,6 +15,7 @@ const ProductsOnOffer = () => {
       {offers.map((product) => (
         <div className="product-card" key={product.id}>
           <div className="product-card-top">
+            <div className="discount-badge">-{product.discountPercent}%</div>
             <img
               src={product.image}
               alt={product.name}
@@ -34,7 +35,7 @@ const ProductsOnOffer = () => {
               </div>
               <div className="product-prices">
                 <p className="offer-price">
-                  <span className="product-span-price"> Oferta:</span> S/.
+                  <span className="product-span-price"> S/ </span>
                   {product.price}
                 </p>
               </div>

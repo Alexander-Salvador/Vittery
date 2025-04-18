@@ -11,16 +11,19 @@
 .banner-container {
   width: 100%;
   margin-bottom: 2rem;
+  background-color: ;
 }
 
 .Products-offer-container {
+  display: grid;
   width: 100%;
+  grid-template-columns: 1fr 2fr;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .Products-offer-container h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #151515;
+  text-align: center;
 }

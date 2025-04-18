@@ -9,6 +9,7 @@ const HomePage = () => {
         <Banner />
       </div>
       <div className="Products-offer-container">
+        <h2>Hola</h2>
         <ProductsOnOffer />
       </div>
     </div>
