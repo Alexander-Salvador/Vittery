@@ -5,6 +5,5 @@
 }
 
 .logo__image {
-  height: 90px;
-  width: 160px;
+  object-fit: cover;
 }
