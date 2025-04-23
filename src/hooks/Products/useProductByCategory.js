@@ -12,9 +12,9 @@ const useProductByCategory = (category) => {
   );
   
   return { 
-    products: filteredProducts, 
-    loading: false, 
-    error: filteredProducts.length === 0 ? 'No products found in this category' : null 
+    products: filteredProducts,
+    loading: false,
+    error: filteredProducts.length === 0 ? 'No products found in this category' : null
   };
 };
 

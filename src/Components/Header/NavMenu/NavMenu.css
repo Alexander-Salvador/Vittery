@@ -8,9 +8,14 @@
 }
 
 .nav-menu-item {
-  font-size: 1.1rem;
-  font-family: system-ui;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  font-weight: 400;
   padding: 0.5rem 1rem;
   color: #555655;
+}
+.nav-menu-item:hover {
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  cursor: pointer;
 }

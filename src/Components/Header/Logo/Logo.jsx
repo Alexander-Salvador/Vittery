@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/logovitterys.png';
+import { SiCoinmarketcap } from 'react-icons/si';
+
 import './Logo.css';
 
 const Logo = () => {
   return (
-    <div className="logo">
+    <div className="nav-logo">
       <Link to="/">
-        <img src={logo} alt="Logo Vittery" className="logo__image" />
+        <h1>
+          <SiCoinmarketcap className="nav-icon" />
+          Vitterys
+        </h1>
       </Link>
     </div>
   );

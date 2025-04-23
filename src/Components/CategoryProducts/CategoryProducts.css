@@ -1,0 +1,23 @@
+.category__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.category__container-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #151515;
+}
+
+.category__grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.category__card-img {
+  width: 250px;
+  height: 200px;
+  image-rendering: pixelated;
+  border-radius: 15px;
+}
