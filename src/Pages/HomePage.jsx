@@ -5,7 +5,7 @@ import './HomePage.css';
 
 const HomePage = () => {
   return (
-    <div className="home-page">
+    <div className="homepage__container">
       <div className="banner-container">
         <Banner />
       </div>

@@ -1,4 +1,4 @@
-.home-page {
+.homepage__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,9 +6,11 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 1rem;
+  gap: 2rem;
 }
 
 .banner-container {
+  margin-top: 2rem;
   width: 100%;
   margin-bottom: 2rem;
   background-color: ;
@@ -17,8 +19,7 @@
 .category-container {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 2fr;
-  width: 100%;
+  justify-content: center;
 }
 
 .Products-offer-container {
@@ -26,6 +27,7 @@
   width: 100%;
   grid-template-columns: 1fr 2fr;
   max-width: 1200px;
+  margin-top: 4rem;
 }
 
 .Products-offer-container h2 {

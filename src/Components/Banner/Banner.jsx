@@ -33,7 +33,7 @@ const Banner = () => {
 
           <div className="banner__button-right">
             <CiShoppingTag className="banner__button-right-icon" />
-            <h3 className="banner-button-right-text"> Descubrir productos →</h3>
+            <h3 className="banner-button-right-text">En tendencia →</h3>
           </div>
         </div>
       </div>
