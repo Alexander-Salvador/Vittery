@@ -1,3 +1,4 @@
+import { FaArrowRight } from 'react-icons/fa6';
 import './CategoryProducts.css';
 
 const CategoryProducts = () => {
@@ -29,9 +30,19 @@ const CategoryProducts = () => {
   ];
   return (
     <div className="category__container">
-      <h2 className="category__container-title">
-        Explora las nuevas categorías
-      </h2>
+      <div className="category__container-titles">
+        <div className="category__left">
+          <h2 className="category-title">Categorías</h2>
+          <p className="category-description">
+            Explora una amplia variedad de categorías para encontrar lo que
+            necesitas.
+          </p>
+        </div>
+        <div className="category__right">
+          <p className="category__right-text">Explora todas las categorías</p>
+          <FaArrowRight />
+        </div>
+      </div>
       <div className="category__grid">
         {Categories.map((category, index) => (
           <div className="category__card" key={index}>

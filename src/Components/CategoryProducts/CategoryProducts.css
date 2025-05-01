@@ -4,10 +4,38 @@
   gap: 1.5rem;
 }
 
-.category__container-title {
-  font-size: 2rem;
+.category__container-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-title {
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   color: #151515;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.category-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.category__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.category__right-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
 }
 
 .category__grid {
@@ -53,6 +81,6 @@
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
-  text-shadow: 1px 1px 1px rgba(163, 163, 163, 0.646);
+  text-shadow: 1px 1px 0px rgba(125, 124, 124, 0.646);
   margin: 0;
 }
