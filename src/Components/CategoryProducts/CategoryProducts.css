@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .category-title {
   font-size: 2.4rem;
@@ -20,22 +22,37 @@
 .category-description {
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 1.5rem;
-  color: #555;
+  color: #626262;
 }
 
 .category__right {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .category__right-text {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #555;
+  color: #588ceb;
+  transition: color 0.3s ease;
+}
+
+.category__right-icon {
+  font-size: 1rem;
+  color: #588ceb;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.category__right:hover .category__right-text,
+.category__right:hover .category__right-icon {
+  color: #3a7dd0;
+}
+
+.category__right:hover .category__right-icon {
+  transform: translateX(5px);
 }
 
 .category__grid {

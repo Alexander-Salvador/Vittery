@@ -17,16 +17,23 @@
   padding: 0.8rem 3rem;
   border-radius: 10px;
   border: none;
-  cursor: pointer;
   background-color: rgb(243, 243, 243);
   border-radius: 20px;
   border: 1px solid #dedddd;
   font-family: sans-serif;
   color: #575757;
   font-size: 1rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar__input:focus {
   outline: none;
-  border: solid 1px #c4c4c4;
+  border: solid 1px #bebebe;
+  padding: 0.8rem 5rem 0.8rem 3rem;
 }
+
+/* .search-bar__input:focus::placeholder {
+  font-size: 1rem;
+  margin-right: 50px;
+} */

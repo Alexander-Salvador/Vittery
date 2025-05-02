@@ -5,27 +5,27 @@ const CategoryProducts = () => {
   const Categories = [
     {
       name: 'Ropa',
-      image: './images/products/Categories/categories-clothes.jpg',
+      image: './images/Categories/categories-clothes.jpg',
     },
     {
       name: 'Supermercado',
-      image: './images/products/Categories/categories-supermarket.jpg',
+      image: './images/Categories/categories-supermarket.jpg',
     },
     {
       name: 'Tecnología',
-      image: './images/products/Categories/categories-technology.jpg',
+      image: './images/Categories/categories-technology.jpg',
     },
     {
       name: 'Salud & Bienestar',
-      image: './images/products/Categories/categories-health.jpg',
+      image: './images/Categories/categories-health.jpg',
     },
     {
       name: 'Hogar & Decoración',
-      image: './images/products/Categories/categories-home.jpg',
+      image: './images/Categories/categories-home.jpg',
     },
     {
       name: 'Fitness',
-      image: './images/products/Categories/categories-fitness.jpg',
+      image: './images/Categories/categories-fitness.jpg',
     },
   ];
   return (
@@ -40,7 +40,7 @@ const CategoryProducts = () => {
         </div>
         <div className="category__right">
           <p className="category__right-text">Explora todas las categorías</p>
-          <FaArrowRight />
+          <FaArrowRight className="category__right-icon" />
         </div>
       </div>
       <div className="category__grid">

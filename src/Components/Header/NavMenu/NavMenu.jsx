@@ -1,23 +1,35 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import './NavMenu.css';
 
 const NavMenu = () => {
+  const [showCategories, setShowCategories] = useState(false);
+
   return (
-    <ul className="nav-menu-list">
-      <li className="nav-menu-elements">
-        <Link className="nav-menu-item" to="/">
-          Promociones
-        </Link>
+    <ul className="nav__menu-list">
+      <li className="nav__menu-elements">
+        <NavLink className="nav__menu-item" to="/">
+          Home
+        </NavLink>
       </li>
-      <li className="nav-menu-elements">
-        <Link className="nav-menu-item" to="/hogar">
+
+      <li className="nav__menu-elements">
+        <NavLink className="nav__menu-item" to="/hogar">
           Ofertas
-        </Link>
+        </NavLink>
       </li>
-      <li className="nav-menu-elements">
-        <Link className="nav-menu-item" to="/ropa">
+      <li
+        className="nav__menu-elements"
+        onMouseEnter={() => setShowCategories(true)}
+        onMouseLeave={() => setShowCategories(false)}>
+        <span className="nav__menu-item">
+          Categorías <span>▾</span>
+        </span>
+      </li>
+      <li className="nav__menu-elements">
+        <NavLink className="nav__menu-item" to="/ropa">
           Beneficios
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );
