@@ -1,4 +1,6 @@
 .category__container {
+  width: 100%;
+  max-width: 1400px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -58,6 +60,8 @@
 .category__grid {
   display: flex;
   gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
 }
 
 .category__card {

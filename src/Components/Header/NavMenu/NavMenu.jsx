@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
+import CategoryNavMenu from '../CategoryNavMenu/CategoryNavMenu';
 import './NavMenu.css';
 
 const NavMenu = () => {
@@ -24,6 +25,11 @@ const NavMenu = () => {
         onMouseLeave={() => setShowCategories(false)}>
         <span className="nav__menu-item">
           Categorías <span>▾</span>
+          {showCategories && (
+            <div className="nav__menu-category">
+              <CategoryNavMenu />
+            </div>
+          )}
         </span>
       </li>
       <li className="nav__menu-elements">
