@@ -1,88 +1,86 @@
-.products-container {
+.generalProducts__container {
+  width: 100%;
+  max-width: 1400px;
   display: grid;
-  height: 400px;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 3fr 1fr;
-  gap: 1rem;
-  border-radius: 20px;
-  background-color: rgb(251, 202, 202);
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-.product-card-top {
+.generalProducts__titles {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.generalProducts__title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #151515;
+  padding: 0;
+  margin-bottom: 10px;
 }
 
-.product-card-bottom {
+.generalProducts__description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #626262;
 }
 
-.product-card-image {
-  width: 70%;
-  height: 180px;
-  border-radius: 4px;
-}
-
-.product-card-title {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-  color: #333;
-  text-align: center;
-}
-
-.product-card-price-online {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #da3535;
-  padding: 10px;
-}
-
-.product-card-price-online-value-online {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #d60f0f;
-  padding: 10px;
-}
-
-.product-card-price-container-normal {
+.generalProducts__right {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-}
-
-.product-card-price-normal {
-  font-weight: bold;
-  color: #333;
-}
-
-.product-card-price-normal-value-normal {
-  font-weight: bold;
-  color: #333;
-  text-decoration: line-through;
-}
-
-.product-card-button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.product-card-button {
-  display: flex;
-  background-color: #da3535;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  font-family: system-ui;
-  font-weight: bold;
-  border-radius: 4px;
+  gap: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.product-card-button:hover {
-  background-color: #b32a2a;
+.generalProducts__right-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #588ceb;
+  transition: color 0.3s ease;
+}
+
+.generalProducts__right-icon {
+  font-size: 1rem;
+  color: #588ceb;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.generalProducts__right:hover .generalProducts__right-text,
+.generalProducts__right:hover .generalProducts__right-icon {
+  color: #3a7dd0;
+}
+
+.generalProducts__right:hover .generalProducts__right-icon {
+  transform: translateX(5px);
+}
+
+.generalProducts__container-card {
+  width: 100%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.generalProducts__card-image {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.category__card-img {
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(243, 243, 243, 0.2);
+  background-color: rgba(177, 88, 88, 0.4);
+  display: block;
+  transition: transform 0.3s ease;
 }

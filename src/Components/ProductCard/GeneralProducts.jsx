@@ -1,15 +1,18 @@
 import './GeneralProducts.css';
+import { FaArrowRight } from 'react-icons/fa';
 import useProductManager from '../../hooks/Products/useProductManager';
 
-const GeneralProducts = ({ product }) => {
-  const { loading, error } = useProductManager(product);
-  if (loading) return <p>Cargando producto...</p>;
+const GeneralProducts = () => {
+  const { products, error, loading } = useProductManager();
+
+  if (loading) return <p>Cargando productos...</p>;
   if (error) return <p>Error: {error}</p>;
-  if (!product) return <p>No hay producto disponible.</p>;
-  if (product.length === 0) return <p>No hay productos disponibles.</p>;
+  if (!products || products.length === 0)
+    return <p>No hay productos disponibles.</p>;
 
   return (
     <div className="generalProducts__container">
+      
       <div className="generalProducts__titles">
         <div className="generalProducts__left">
           <h2 className="generalProducts__title">Categorías</h2>
@@ -26,50 +29,49 @@ const GeneralProducts = ({ product }) => {
         </div>
       </div>
 
-      <div className="generalProducts__card">
-        <div className="product-card-top">
-          <img
-            src={product.image}
-            alt={product.name}
-            className="product-card-image"
-            onError={(e) => {
-              e.target.src = '/placeholder.jpg'; // Asegúrate de tener una imagen placeholder
-            }}
-          />
-        </div>
+      <div className="generalProducts__container-card">
+        {products.map((product) => (
+          <div className="generalProducts__card" key={product.id}>
+            <div className="generalProducts__card-image-container">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="generalProducts__card-image"
+                onError={(e) => {
+                  e.target.src = '/placeholder.jpg'; // imagen alternativa
+                }}
+              />
+            </div>
 
-        <div className="product-card-bottom">
-          <h3 className="product-card-title">{product.name}</h3>
-          <p className="product-card-price-online">Precio Online</p>
+            <div className="generalProducts__card-description-container">
+              <h3 className="generalProducts__card-title">{product.name}</h3>
+              <p className="generalProducts__card-price-online">
+                Precio Online
+              </p>
+              <span className="generalProducts__card-price-online-value-online">
+                <span className="generalProducts__card-price-online-value-online-symbol">
+                  $/{' '}
+                </span>
+                {product.price}
+              </span>
 
-          <span className="product-card-price-online-value-online">
-            <span className="product-card-price-online-value-online-symbol">
-              {'$/ '}
-            </span>
-            {product.price}
-          </span>
+              <p className="generalProducts__price-normal">Precio Normal</p>
+              <span className="generalProducts__price-normal-value-normal">
+                <span className="generalProducts__price-normal-value-normal-symbol">
+                  $/{' '}
+                </span>
+                {product.price}
+              </span>
 
-          <p className="product-card-price-normal">Precio Normal</p>
-          <span className="product-card-price-normal-value-normal">
-            <span className="product-card-price-normal-value-normal-symbol">
-              {'$/ '}
-            </span>
-            {product.price}
-          </span>
-
-          <button className="product-card-button">Agregar al carrito</button>
-        </div>
+              <button className="generalProducts__card-button">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
 export default GeneralProducts;
-
-// Nos quedamos en la parte de los productos.
-// En el archivo GeneralProducts.jsx, hemos creado un componente que muestra los productos de forma individual.
-// Este componente recibe un producto como prop y muestra su imagen, nombre y precios.
-// Nos falta integrar este componente en la página de productos.
-// Para ello, vamos a crear un nuevo archivo llamado ProductPage.jsx en la carpeta src/Pages.
-// En este archivo, vamos a importar el componente GeneralProducts y pasarlo como prop a la página de productos.
-// También vamos a crear un archivo ProductPage.css para darle estilo a la página de productos.

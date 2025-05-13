@@ -43,6 +43,7 @@ const CategoryProducts = () => {
           <FaArrowRight className="category__right-icon" />
         </div>
       </div>
+
       <div className="category__grid">
         {Categories.map((category, index) => (
           <div className="category__card" key={index}>

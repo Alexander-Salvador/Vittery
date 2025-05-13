@@ -1,6 +1,7 @@
 import Banner from '../Components/Banner/Banner';
-import ProductsOnOffer from '../Components/ProductCard/ProductsOnOffer';
 import CategoryProducts from '../Components/CategoryProducts/CategoryProducts';
+import ProductsOnOffer from '../Components/ProductCard/ProductsOnOffer';
+import GeneralProducts from '../Components/ProductCard/GeneralProducts';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -11,6 +12,9 @@ const HomePage = () => {
       </div>
       <div className="category-container">
         <CategoryProducts />
+      </div>
+      <div className="GeneralProducts-container">
+        <GeneralProducts />
       </div>
       <div className="Products-offer-container">
         <h2>Hola</h2>
