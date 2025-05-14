@@ -25,8 +25,8 @@
 .GeneralProducts-container {
   display: grid;
   width: 100%;
-  justify-content: center;
 }
+
 .Products-offer-container {
   display: grid;
   width: 100%;

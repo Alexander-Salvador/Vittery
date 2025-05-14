@@ -12,19 +12,15 @@ const GeneralProducts = () => {
 
   return (
     <div className="generalProducts__container">
-      
       <div className="generalProducts__titles">
         <div className="generalProducts__left">
-          <h2 className="generalProducts__title">Categorías</h2>
+          <h2 className="generalProducts__title">Nuestros Productos</h2>
           <p className="generalProducts__description">
-            Explora una amplia variedad de categorías para encontrar lo que
-            necesitas.
+            Nuestros productos más vendidos y de tendencia
           </p>
         </div>
         <div className="generalProducts__right">
-          <p className="generalProducts__right-text">
-            Explora todas las categorías
-          </p>
+          <p className="generalProducts__right-text">Ver todos</p>
           <FaArrowRight className="generalProducts__right-icon" />
         </div>
       </div>
@@ -63,9 +59,9 @@ const GeneralProducts = () => {
                 {product.price}
               </span>
 
-              <button className="generalProducts__card-button">
+              {/* <button className="generalProducts__card-button">
                 Agregar al carrito
-              </button>
+              </button> */}
             </div>
           </div>
         ))}
