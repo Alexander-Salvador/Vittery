@@ -1,574 +1,694 @@
 {
   "products": [
     {
-      "name": "Producto Ejemplo #1",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
+      "id": 1,
+      "title": "TV 4K 55 Pulgadas",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "tecnología",
+      "brand": "LG",
+      "price": 99.0,
+      "originalPrice": 110.0,
+      "isOffer": true,
+      "stock": 2,
+      "rating": 3.5,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/tecnología/product1-desktop.webp",
+          "tablet": "images/tecnología/product1-tablet.webp",
+          "mobile": "images/tecnología/product1-mobile.webp"
+        },
+        "gallery": ["images/tecnología/product1-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "TECNOLOGÍA-001"
+    },
+    {
+      "id": 2,
+      "title": "Smartphone Android",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "ropa",
+      "brand": "Samsung",
+      "price": 102.5,
+      "originalPrice": 120.59,
+      "isOffer": false,
+      "stock": 4,
+      "rating": 3.8,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/ropa/product2-desktop.webp",
+          "tablet": "images/ropa/product2-tablet.webp",
+          "mobile": "images/ropa/product2-mobile.webp"
+        },
+        "gallery": ["images/ropa/product2-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "ROPA-002"
+    },
+    {
+      "id": 3,
+      "title": "Zapatillas Running",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "supermercado",
+      "brand": "Sony",
+      "price": 106.0,
+      "originalPrice": 132.5,
+      "isOffer": true,
+      "stock": 6,
+      "rating": 4.1,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/supermercado/product3-desktop.webp",
+          "tablet": "images/supermercado/product3-tablet.webp",
+          "mobile": "images/supermercado/product3-mobile.webp"
+        },
+        "gallery": ["images/supermercado/product3-galeria1.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "SUPERMERCADO-003"
+    },
+    {
+      "id": 4,
+      "title": "Proteína Whey",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "salud y bienestar",
+      "brand": "Nike",
+      "price": 109.5,
+      "originalPrice": 146.0,
+      "isOffer": false,
+      "stock": 8,
+      "rating": 4.4,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/saludybienestar/product4-desktop.webp",
+          "tablet": "images/saludybienestar/product4-tablet.webp",
+          "mobile": "images/saludybienestar/product4-mobile.webp"
+        },
+        "gallery": ["images/saludybienestar/product4-galeria1.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "SALUDYBIENESTAR-004"
+    },
+    {
+      "id": 5,
+      "title": "Cafetera Automática",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "hogar y decoración",
+      "brand": "Adidas",
+      "price": 113.0,
+      "originalPrice": 125.56,
+      "isOffer": true,
+      "stock": 10,
+      "rating": 4.7,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/hogarydecoración/product5-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "HOGARYDECORACIÓN-005"
+    },
+    {
+      "id": 6,
+      "title": "Bicicleta Estática",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "fitness",
+      "brand": "Philips",
+      "price": 116.5,
+      "originalPrice": 137.06,
+      "isOffer": false,
+      "stock": 12,
+      "rating": 3.5,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/fitness/product6-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "FITNESS-006"
+    },
+    {
+      "id": 7,
+      "title": "Sofá Modular",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "tecnología",
+      "brand": "Xiaomi",
+      "price": 120.0,
+      "originalPrice": 150.0,
+      "isOffer": true,
+      "stock": 14,
+      "rating": 3.8,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/tecnología/product7-galeria1.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "TECNOLOGÍA-007"
+    },
+    {
+      "id": 8,
+      "title": "Camiseta Deportiva",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "ropa",
+      "brand": "LG",
+      "price": 123.5,
+      "originalPrice": 164.67,
+      "isOffer": false,
+      "stock": 16,
+      "rating": 4.1,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/ropa/product8-galeria1.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "ROPA-008"
+    },
+    {
+      "id": 9,
+      "title": "TV 4K 55 Pulgadas",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "supermercado",
+      "brand": "Samsung",
+      "price": 127.0,
+      "originalPrice": 141.11,
+      "isOffer": true,
+      "stock": 18,
+      "rating": 4.4,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/supermercado/product9-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "SUPERMERCADO-009"
+    },
+    {
+      "id": 10,
+      "title": "Smartphone Android",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "salud y bienestar",
+      "brand": "Sony",
+      "price": 130.5,
+      "originalPrice": 153.53,
+      "isOffer": false,
+      "stock": 20,
+      "rating": 4.7,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/products/cocacola.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "SALUDYBIENESTAR-010"
+    },
+    {
+      "id": 11,
+      "title": "Zapatillas Running",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "hogar y decoración",
+      "brand": "Nike",
+      "price": 134.0,
+      "originalPrice": 167.5,
+      "isOffer": true,
+      "stock": 22,
+      "rating": 3.5,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/products/cocacola.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "HOGARYDECORACIÓN-011"
+    },
+    {
+      "id": 12,
+      "title": "Proteína Whey",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "fitness",
+      "brand": "Adidas",
+      "price": 137.5,
+      "originalPrice": 183.33,
+      "isOffer": false,
+      "stock": 24,
+      "rating": 3.8,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/products/cocacola.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "FITNESS-012"
+    },
+    {
+      "id": 13,
+      "title": "Cafetera Automática",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "tecnología",
+      "brand": "Philips",
+      "price": 141.0,
+      "originalPrice": 156.67,
+      "isOffer": true,
       "stock": 26,
-      "rating": 4.5,
+      "rating": 4.1,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/tecnología/product13-desktop.webp",
+          "tablet": "images/tecnología/product13-tablet.webp",
+          "mobile": "images/tecnología/product13-mobile.webp"
+        },
+        "gallery": ["images/tecnología/product13-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "TECNOLOGÍA-013"
+    },
+    {
+      "id": 14,
+      "title": "Bicicleta Estática",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "ropa",
+      "brand": "Xiaomi",
+      "price": 144.5,
+      "originalPrice": 170.0,
       "isOffer": false,
-      "price": 1195.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 1
-    },
-    {
-      "name": "Producto Ejemplo #2",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 27,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1190.0,
-      "originalPrice": 1428.0,
-      "discountPercent": 16,
-      "id": 2
-    },
-    {
-      "name": "Producto Ejemplo #3",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 28,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1185.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 3
+      "rating": 4.4,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/ropa/product14-desktop.webp",
+          "tablet": "images/ropa/product14-tablet.webp",
+          "mobile": "images/ropa/product14-mobile.webp"
+        },
+        "gallery": ["images/ropa/product14-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "ROPA-014"
     },
     {
-      "name": "Producto Ejemplo #4",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 29,
-      "rating": 4.5,
+      "id": 15,
+      "title": "Sofá Modular",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "supermercado",
+      "brand": "LG",
+      "price": 148.0,
+      "originalPrice": 185.0,
       "isOffer": true,
-      "price": 1180.0,
-      "originalPrice": 1416.0,
-      "discountPercent": 16,
-      "id": 4
-    },
-    {
-      "name": "Producto Ejemplo #5",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 30,
-      "rating": 4.5,
+      "rating": 4.7,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/supermercado/product15-desktop.webp",
+          "tablet": "images/supermercado/product15-tablet.webp",
+          "mobile": "images/supermercado/product15-mobile.webp"
+        },
+        "gallery": ["images/supermercado/product15-galeria1.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "SUPERMERCADO-015"
+    },
+    {
+      "id": 16,
+      "title": "Camiseta Deportiva",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "salud y bienestar",
+      "brand": "Samsung",
+      "price": 151.5,
+      "originalPrice": 202.0,
       "isOffer": false,
-      "price": 1175.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 5
-    },
-    {
-      "name": "Producto Ejemplo #6",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 31,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1170.0,
-      "originalPrice": 1404.0,
-      "discountPercent": 16,
-      "id": 6
-    },
-    {
-      "name": "Producto Ejemplo #7",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 32,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1165.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 7
+      "rating": 3.5,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/saludybienestar/product16-desktop.webp",
+          "tablet": "images/saludybienestar/product16-tablet.webp",
+          "mobile": "images/saludybienestar/product16-mobile.webp"
+        },
+        "gallery": ["images/saludybienestar/product16-galeria1.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "SALUDYBIENESTAR-016"
     },
     {
-      "name": "Producto Ejemplo #8",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 33,
-      "rating": 4.5,
+      "id": 17,
+      "title": "TV 4K 55 Pulgadas",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "hogar y decoración",
+      "brand": "Sony",
+      "price": 155.0,
+      "originalPrice": 172.22,
       "isOffer": true,
-      "price": 1160.0,
-      "originalPrice": 1392.0,
-      "discountPercent": 16,
-      "id": 8
-    },
-    {
-      "name": "Producto Ejemplo #9",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 34,
-      "rating": 4.5,
+      "rating": 3.8,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/hogarydecoración/product17-desktop.webp",
+          "tablet": "images/hogarydecoración/product17-tablet.webp",
+          "mobile": "images/hogarydecoración/product17-mobile.webp"
+        },
+        "gallery": ["images/hogarydecoración/product17-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "HOGARYDECORACIÓN-017"
+    },
+    {
+      "id": 18,
+      "title": "Smartphone Android",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "fitness",
+      "brand": "Nike",
+      "price": 158.5,
+      "originalPrice": 186.47,
       "isOffer": false,
-      "price": 1155.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 9
-    },
-    {
-      "name": "Producto Ejemplo #10",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 35,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1150.0,
-      "originalPrice": 1380.0,
-      "discountPercent": 16,
-      "id": 10
-    },
-    {
-      "name": "Producto Ejemplo #11",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 36,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1145.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 11
+      "rating": 4.1,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/fitness/product18-desktop.webp",
+          "tablet": "images/fitness/product18-tablet.webp",
+          "mobile": "images/fitness/product18-mobile.webp"
+        },
+        "gallery": ["images/fitness/product18-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "FITNESS-018"
     },
     {
-      "name": "Producto Ejemplo #12",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 37,
-      "rating": 4.5,
+      "id": 19,
+      "title": "Zapatillas Running",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "tecnología",
+      "brand": "Adidas",
+      "price": 162.0,
+      "originalPrice": 202.5,
       "isOffer": true,
-      "price": 1140.0,
-      "originalPrice": 1368.0,
-      "discountPercent": 16,
-      "id": 12
-    },
-    {
-      "name": "Producto Ejemplo #13",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 38,
-      "rating": 4.5,
+      "rating": 4.4,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/tecnología/product19-desktop.webp",
+          "tablet": "images/tecnología/product19-tablet.webp",
+          "mobile": "images/tecnología/product19-mobile.webp"
+        },
+        "gallery": ["images/tecnología/product19-galeria1.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "TECNOLOGÍA-019"
+    },
+    {
+      "id": 20,
+      "title": "Proteína Whey",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "ropa",
+      "brand": "Philips",
+      "price": 165.5,
+      "originalPrice": 220.67,
       "isOffer": false,
-      "price": 1135.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 13
-    },
-    {
-      "name": "Producto Ejemplo #14",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 39,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1130.0,
-      "originalPrice": 1356.0,
-      "discountPercent": 16,
-      "id": 14
-    },
-    {
-      "name": "Producto Ejemplo #15",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 40,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1125.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 15
+      "rating": 4.7,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/ropa/product20-desktop.webp",
+          "tablet": "images/ropa/product20-tablet.webp",
+          "mobile": "images/ropa/product20-mobile.webp"
+        },
+        "gallery": ["images/ropa/product20-galeria1.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "ROPA-020"
     },
     {
-      "name": "Producto Ejemplo #16",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 41,
-      "rating": 4.5,
+      "id": 21,
+      "title": "Cafetera Automática",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "supermercado",
+      "brand": "Xiaomi",
+      "price": 169.0,
+      "originalPrice": 187.78,
       "isOffer": true,
-      "price": 1120.0,
-      "originalPrice": 1344.0,
-      "discountPercent": 16,
-      "id": 16
-    },
-    {
-      "name": "Producto Ejemplo #17",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 42,
-      "rating": 4.5,
+      "rating": 3.5,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/supermercado/product21-desktop.webp",
+          "tablet": "images/supermercado/product21-tablet.webp",
+          "mobile": "images/supermercado/product21-mobile.webp"
+        },
+        "gallery": ["images/supermercado/product21-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "SUPERMERCADO-021"
+    },
+    {
+      "id": 22,
+      "title": "Bicicleta Estática",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "salud y bienestar",
+      "brand": "LG",
+      "price": 172.5,
+      "originalPrice": 202.94,
       "isOffer": false,
-      "price": 1115.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 17
-    },
-    {
-      "name": "Producto Ejemplo #18",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 43,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1110.0,
-      "originalPrice": 1332.0,
-      "discountPercent": 16,
-      "id": 18
-    },
-    {
-      "name": "Producto Ejemplo #19",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 44,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1105.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 19
+      "rating": 3.8,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/saludybienestar/product22-desktop.webp",
+          "tablet": "images/saludybienestar/product22-tablet.webp",
+          "mobile": "images/saludybienestar/product22-mobile.webp"
+        },
+        "gallery": ["images/saludybienestar/product22-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "SALUDYBIENESTAR-022"
     },
     {
-      "name": "Producto Ejemplo #20",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 45,
-      "rating": 4.5,
+      "id": 23,
+      "title": "Sofá Modular",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "hogar y decoración",
+      "brand": "Samsung",
+      "price": 176.0,
+      "originalPrice": 220.0,
       "isOffer": true,
-      "price": 1100.0,
-      "originalPrice": 1320.0,
-      "discountPercent": 16,
-      "id": 20
-    },
-    {
-      "name": "Producto Ejemplo #21",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 46,
-      "rating": 4.5,
+      "rating": 4.1,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/products/cocacola.webp",
+          "tablet": "images/products/cocacola.webp",
+          "mobile": "images/products/cocacola.webp"
+        },
+        "gallery": ["images/hogarydecoración/product23-galeria1.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "HOGARYDECORACIÓN-023"
+    },
+    {
+      "id": 24,
+      "title": "Camiseta Deportiva",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "fitness",
+      "brand": "Sony",
+      "price": 179.5,
+      "originalPrice": 239.33,
       "isOffer": false,
-      "price": 1095.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 21
-    },
-    {
-      "name": "Producto Ejemplo #22",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 47,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1090.0,
-      "originalPrice": 1308.0,
-      "discountPercent": 16,
-      "id": 22
-    },
-    {
-      "name": "Producto Ejemplo #23",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 48,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1085.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 23
+      "rating": 4.4,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/fitness/product24-desktop.webp",
+          "tablet": "images/fitness/product24-tablet.webp",
+          "mobile": "images/fitness/product24-mobile.webp"
+        },
+        "gallery": ["images/fitness/product24-galeria1.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "FITNESS-024"
     },
     {
-      "name": "Producto Ejemplo #24",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 49,
-      "rating": 4.5,
+      "id": 25,
+      "title": "TV 4K 55 Pulgadas",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "tecnología",
+      "brand": "Nike",
+      "price": 183.0,
+      "originalPrice": 203.33,
       "isOffer": true,
-      "price": 1080.0,
-      "originalPrice": 1296.0,
-      "discountPercent": 16,
-      "id": 24
-    },
-    {
-      "name": "Producto Ejemplo #25",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 50,
-      "rating": 4.5,
+      "rating": 4.7,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/tecnología/product25-desktop.webp",
+          "tablet": "images/tecnología/product25-tablet.webp",
+          "mobile": "images/tecnología/product25-mobile.webp"
+        },
+        "gallery": ["images/tecnología/product25-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "TECNOLOGÍA-025"
+    },
+    {
+      "id": 26,
+      "title": "Smartphone Android",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "ropa",
+      "brand": "Adidas",
+      "price": 186.5,
+      "originalPrice": 219.41,
       "isOffer": false,
-      "price": 1075.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 25
-    },
-    {
-      "name": "Producto Ejemplo #26",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 51,
-      "rating": 4.5,
-      "isOffer": true,
-      "price": 1070.0,
-      "originalPrice": 1284.0,
-      "discountPercent": 16,
-      "id": 26
-    },
-    {
-      "name": "Producto Ejemplo #27",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 52,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1065.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 27
+      "rating": 3.5,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/ropa/product26-desktop.webp",
+          "tablet": "images/ropa/product26-tablet.webp",
+          "mobile": "images/ropa/product26-mobile.webp"
+        },
+        "gallery": ["images/ropa/product26-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "ROPA-026"
     },
     {
-      "name": "Producto Ejemplo #28",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 53,
-      "rating": 4.5,
+      "id": 27,
+      "title": "Zapatillas Running",
+      "description": "Incluye funcionalidades modernas para un mejor rendimiento.",
+      "category": "supermercado",
+      "brand": "Philips",
+      "price": 190.0,
+      "originalPrice": 237.5,
       "isOffer": true,
-      "price": 1060.0,
-      "originalPrice": 1272.0,
-      "discountPercent": 16,
-      "id": 28
-    },
-    {
-      "name": "Producto Ejemplo #29",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
       "stock": 54,
-      "rating": 4.5,
-      "isOffer": false,
-      "price": 1055.0,
-      "originalPrice": 1500.0,
-      "discountPercent": 20,
-      "id": 29
+      "rating": 3.8,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/supermercado/product27-desktop.webp",
+          "tablet": "images/supermercado/product27-tablet.webp",
+          "mobile": "images/supermercado/product27-mobile.webp"
+        },
+        "gallery": ["images/supermercado/product27-galeria1.webp"]
+      },
+      "tags": ["orgánico"],
+      "sku": "SUPERMERCADO-027"
     },
     {
-      "name": "Producto Ejemplo #30",
-      "description": "Descripción del producto de ejemplo con detalles únicos.",
-      "category": "tecnologia",
-      "image": "images/products/cocacola.webp",
-      "thumbnail": "images/products/thumbnails/producto-thumb.webp",
-      "images": [
-        "images/products/cocacola.webp",
-        "images/products/producto-ejemplo2.webp",
-        "images/products/producto-ejemplo3.webp"
-      ],
-      "stock": 55,
-      "rating": 4.5,
+      "id": 28,
+      "title": "Proteína Whey",
+      "description": "Diseñado para ofrecer la mejor experiencia al usuario.",
+      "category": "salud y bienestar",
+      "brand": "Xiaomi",
+      "price": 193.5,
+      "originalPrice": 258.0,
+      "isOffer": false,
+      "stock": 56,
+      "rating": 4.1,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/saludybienestar/product28-desktop.webp",
+          "tablet": "images/saludybienestar/product28-tablet.webp",
+          "mobile": "images/saludybienestar/product28-mobile.webp"
+        },
+        "gallery": ["images/saludybienestar/product28-galeria1.webp"]
+      },
+      "tags": ["moderno", "elegante"],
+      "sku": "SALUDYBIENESTAR-028"
+    },
+    {
+      "id": 29,
+      "title": "Cafetera Automática",
+      "description": "Producto de alta calidad con características avanzadas.",
+      "category": "hogar y decoración",
+      "brand": "LG",
+      "price": 197.0,
+      "originalPrice": 218.89,
       "isOffer": true,
-      "price": 1050.0,
-      "originalPrice": 1260.0,
-      "discountPercent": 16,
-      "id": 30
+      "stock": 58,
+      "rating": 4.4,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/hogarydecoración/product29-desktop.webp",
+          "tablet": "images/hogarydecoración/product29-tablet.webp",
+          "mobile": "images/hogarydecoración/product29-mobile.webp"
+        },
+        "gallery": ["images/hogarydecoración/product29-galeria1.webp"]
+      },
+      "tags": ["smart", "4K"],
+      "sku": "HOGARYDECORACIÓN-029"
+    },
+    {
+      "id": 30,
+      "title": "Bicicleta Estática",
+      "description": "Ideal para uso diario con diseño ergonómico.",
+      "category": "fitness",
+      "brand": "Samsung",
+      "price": 200.5,
+      "originalPrice": 235.88,
+      "isOffer": false,
+      "stock": 60,
+      "rating": 4.7,
+      "images": {
+        "thumbnail": "images/products/cocacola.webp",
+        "sizes": {
+          "desktop": "images/fitness/product30-desktop.webp",
+          "tablet": "images/fitness/product30-tablet.webp",
+          "mobile": "images/fitness/product30-mobile.webp"
+        },
+        "gallery": ["images/fitness/product30-galeria1.webp"]
+      },
+      "tags": ["deportivo", "ligero"],
+      "sku": "FITNESS-030"
     }
   ]
 }

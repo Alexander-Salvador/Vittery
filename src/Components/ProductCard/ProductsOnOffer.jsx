@@ -17,8 +17,8 @@ const ProductsOnOffer = () => {
           <div className="product-card-top">
             <div className="discount-badge">-{product.discountPercent}%</div>
             <img
-              src={product.image}
-              alt={product.name}
+              src={product.images.thumbnail}
+              alt={product.title}
               className="product-card-image"
               onError={(e) => {
                 e.target.onerror = null;
@@ -28,7 +28,7 @@ const ProductsOnOffer = () => {
           </div>
 
           <div className="product-card-bottom">
-            <span className="product-name">{product.name}</span>
+            <span className="product-name">{product.title}</span>
             <div className="product-card-bottom-flex">
               <div className="product-buy-button">
                 <button className="button-buy-now">Comprar</button>

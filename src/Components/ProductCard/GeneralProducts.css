@@ -83,30 +83,6 @@
   border: 2px solid #ecececea;
   position: relative;
   overflow: hidden;
-  /* background-color: red; */
-}
-.generalProducts__card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(69, 63, 63, 0.2);
-}
-.generalProducts__card:hover .generalProducts__card-image {
-  transform: scale(1.05);
-}
-.generalProducts__card:hover .generalProducts__card-title {
-  color: #3a7dd0;
-}
-.generalProducts__card:hover .generalProducts__card-description {
-  color: #3a7dd0;
-}
-.generalProducts__card:hover .generalProducts__card-price {
-  color: #3a7dd0;
-}
-.generalProducts__card:hover .generalProducts__card-button {
-  background-color: #3a7dd0;
-  color: #fff;
-}
-.generalProducts__card:hover .generalProducts__card-button:hover {
-  background-color: #588ceb;
 }
 
 .generalProducts__card-image {
@@ -123,6 +99,57 @@
 .generalProducts__card-title {
   font-weight: 500;
   font-size: 1.1rem;
-  color: #151515;
-  margin-top: 1rem;
+  color: #668ec0;
 }
+
+.generalProducts__card-brand {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.generalProducts__card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.generalProducts__price {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #151515;
+  margin-top: 0.5rem;
+}
+
+.generalProducts__price-value {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #151515;
+}
+
+.generalProducts__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(69, 63, 63, 0.2);
+}
+.generalProducts__card:hover .generalProducts__card-image {
+  transform: scale(1);
+}
+
+.generalProducts__card:hover .generalProducts__card-title {
+  color: #668ec0;
+}
+
+.generalProducts__card:hover .generalProducts__card-tags {
+  color: #668ec0;
+  /* font-weight: 500; */
+}
+/* .generalProducts__card:hover .generalProducts__card-button {
+  background-color: #3a7dd0;
+  color: #fff;
+}
+.generalProducts__card:hover .generalProducts__card-button:hover {
+  background-color: #588ceb;
+} */

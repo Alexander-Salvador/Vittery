@@ -30,8 +30,8 @@ const GeneralProducts = () => {
           <div className="generalProducts__card" key={product.id}>
             <div className="generalProducts__card-image-container">
               <img
-                src={product.image}
-                alt={product.name}
+                src={product.images.thumbnail}
+                alt={product.title}
                 className="generalProducts__card-image"
                 onError={(e) => {
                   e.target.src = '/placeholder.jpg'; // imagen alternativa
@@ -40,22 +40,17 @@ const GeneralProducts = () => {
             </div>
 
             <div className="generalProducts__card-description-container">
-              <h3 className="generalProducts__card-title">{product.name}</h3>
-              <p className="generalProducts__card-price-online">
-                Precio Online
-              </p>
-              <span className="generalProducts__card-price-online-value-online">
-                <span className="generalProducts__card-price-online-value-online-symbol">
-                  $/{' '}
-                </span>
-                {product.price}
+              <span className="generalProducts__card-brand">
+                {product.brand}
+              </span>
+              <h3 className="generalProducts__card-title">{product.title}</h3>
+              <span className="generalProducts__card-tags">
+                {product.tags.join(', ')}
               </span>
 
-              <p className="generalProducts__price-normal">Precio Normal</p>
-              <span className="generalProducts__price-normal-value-normal">
-                <span className="generalProducts__price-normal-value-normal-symbol">
-                  $/{' '}
-                </span>
+              {/* <p className="generalProducts__price">A solo</p> */}
+              <span className="generalProducts__price-value">
+                <span className="generalProducts__price-value-symbol">S/ </span>
                 {product.price}
               </span>
 

@@ -1,4 +1,8 @@
 .homepage__container {
+  background-color: #f2f2f2;
+}
+
+.homepage__container-sections {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,12 +12,10 @@
   padding: 1rem;
   gap: 2rem;
 }
-
 .banner-container {
   margin-top: 2rem;
   width: 100%;
   margin-bottom: 2rem;
-  background-color: ;
 }
 
 .category-container {
