@@ -1,43 +1,98 @@
-import { MdDeliveryDining } from 'react-icons/md';
-import { FiShoppingBag } from 'react-icons/fi';
-import { CiShoppingTag } from 'react-icons/ci';
-
+import { MdLocalShipping, MdAccessTime, MdVerifiedUser } from 'react-icons/md';
+import { BsBoxSeam } from 'react-icons/bs';
 import './Banner.css';
 
 const Banner = () => {
   return (
-    <section className="banner">
-      <div className="banner__description-right">
-        <div className="banner__delivery">
-          <MdDeliveryDining className="banner-delivery-icon" />
-          <h3 className="banner-delivery-text">
-            Entrega gratuita en pedidos de S/ 99.90
-          </h3>
-        </div>
-        <h2 className="banner__title">
-          Todo para tu día a día, en un solo
-          <span className="banner-delivery-span"> clic.</span>
-        </h2>
-        <p className="banner-description">
-          Viterrys selecciona lo mejor en alimentos, moda y tecnología para ti.
-          <br />
-          Disfruta un 30% de descuento y una experiencia de compra única. <br />
-          Porque tu tiempo vale.
-        </p>
-
-        <div className="banner__button-container">
-          <div className="banner__button-left">
-            <FiShoppingBag className="banner__button-left-icon" />
-            <h3 className="banner-button-left-text"> Descubrir productos</h3>
+    <section
+      className="banner__container-general"
+      role="region"
+      aria-label="Promoción destacada de Viterrys">
+      <div className="banner__grid">
+        {/* Columna izquierda */}
+        <div className="banner__left">
+          <div className="banner__label">
+            <MdLocalShipping className="label__icon" aria-hidden="true" />
+            <span>Envío gratis en pedidos superiores a S/ 50</span>
           </div>
 
-          <div className="banner__button-right">
-            <CiShoppingTag className="banner__button-right-icon" />
-            <h3 className="banner-button-right-text">En tendencia →</h3>
+          <h1 className="banner__title">
+            Tu mercado de <br />
+            <span className="highlight">confianza, ahora digital</span>
+          </h1>
+
+          <p className="banner__subtitle">
+            Descubre la frescura y calidad que caracteriza a Viterrys,
+            <br />
+            con la comodidad de comprar desde tu hogar.
+          </p>
+
+          <div className="banner__buttons">
+            <button
+              className="btn btn-primary"
+              aria-label="Comprar ahora en Viterrys">
+              <BsBoxSeam className="btn-icon" />
+              Comprar ahora
+            </button>
+            <button
+              className="btn btn-outline"
+              aria-label="Ver ofertas destacadas">
+              Ver ofertas
+            </button>
+          </div>
+
+          <div className="banner__benefits">
+            <div className="benefit-item">
+              <MdLocalShipping className="benefit-icon" aria-hidden="true" />
+              <p className="benefit-text">Envío rápido</p>
+            </div>
+            <div className="benefit-item">
+              <MdAccessTime className="benefit-icon" aria-hidden="true" />
+              <p className="benefit-text">Entrega 24/7</p>
+            </div>
+            <div className="benefit-item">
+              <MdVerifiedUser className="benefit-icon" aria-hidden="true" />
+              <p className="benefit-text">100% Seguro</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Columna derecha */}
+        <div className="banner__right">
+          <div className="banner__image-wrapper">
+            <img
+              src="/images/Banner/banner-especial.jpg"
+              alt="Vista de frutas frescas en supermercado"
+              className="banner__image"
+              loading="lazy"
+            />
+
+            <div className="floating-tag top-right">
+              <img
+                src="/images/Categories/categories-supermarket.jpg"
+                alt="Fruta fresca del campo"
+                loading="lazy"
+              />
+              <div>
+                <h4>Frutas frescas</h4>
+                <p>Directo del campo</p>
+              </div>
+            </div>
+
+            <div className="floating-tag bottom-left">
+              <img
+                src="/images/Categories/categories-groceries.jpg"
+                alt="Frutas 100% orgánicas"
+                loading="lazy"
+              />
+              <div>
+                <h4>100% Orgánico</h4>
+                <p>Calidad garantizada</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="banner__image-left"> </div>
     </section>
   );
 };

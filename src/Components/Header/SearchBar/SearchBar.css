@@ -18,18 +18,18 @@
   border-radius: 10px;
   border: none;
   background-color: rgb(243, 243, 243);
+  color: #575757;
   border-radius: 20px;
   border: 1px solid #dedddd;
   font-family: sans-serif;
-  color: #575757;
   font-size: 1rem;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar__input:focus {
   outline: none;
-  border: solid 1px #bebebe;
+  border: solid 1px #5da990;
   padding: 0.8rem 5rem 0.8rem 3rem;
 }
 

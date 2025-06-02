@@ -1,7 +1,7 @@
 import DropdownMenu from './DropdownMenu/DropdownMenu';
-import SearchBar from './SeachBar/SearchBar';
+import SearchBar from './SearchBar/SearchBar';
 import Logo from './Logo/Logo';
-import CartIcon from './CarIcon/CartIcon';
+import CartIcon from './CartIcon/CartIcon';
 import AuthButtons from './AuthButtons/AuthButtons';
 import NavMenu from './NavMenu/NavMenu';
 import './Header.css';

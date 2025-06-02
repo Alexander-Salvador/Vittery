@@ -1,19 +1,13 @@
-.cart-icon {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #5e5d5d;
-  text-decoration: none;
-  place-items: center; */
+.cart__icon {
+  background-color: red;
 }
 
 .cart-icon__icon {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
   font-size: 2rem;
+  background-color: red;
 }
 
 .cart-icon__text {

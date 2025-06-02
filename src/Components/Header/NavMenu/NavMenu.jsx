@@ -10,7 +10,7 @@ const NavMenu = () => {
     <ul className="nav__menu-list">
       <li className="nav__menu-elements">
         <NavLink className="nav__menu-item" to="/">
-          Home
+          Inicio
         </NavLink>
       </li>
 
@@ -19,19 +19,22 @@ const NavMenu = () => {
           Ofertas
         </NavLink>
       </li>
+
       <li
-        className="nav__menu-elements"
+        className="nav__menu-elements nav__menu-categorias"
         onMouseEnter={() => setShowCategories(true)}
         onMouseLeave={() => setShowCategories(false)}>
         <span className="nav__menu-item">
           Categorías <span>▾</span>
-          {showCategories && (
-            <div className="nav__menu-category">
-              <CategoryNavMenu />
-            </div>
-          )}
         </span>
+
+        {showCategories && (
+          <div className="nav__menu-category-dropdown">
+            <CategoryNavMenu onCategoryClick={() => setShowCategories(false)} />
+          </div>
+        )}
       </li>
+
       <li className="nav__menu-elements">
         <NavLink className="nav__menu-item" to="/ropa">
           Beneficios
