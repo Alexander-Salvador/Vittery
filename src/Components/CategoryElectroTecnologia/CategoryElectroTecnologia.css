@@ -1,0 +1,272 @@
+/* ==========================
+   CONTENEDOR GENERAL
+========================== */
+.CategoryTecnologia__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ==========================
+     TÍTULOS PRINCIPALES
+  ========================== */
+.CategoryTecnologia__titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.CategoryTecnologia__title {
+  font-size: 2.4rem;
+  color: #151515;
+  margin-bottom: 10px;
+}
+
+.CategoryTecnologia__description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #626262;
+  margin: 0;
+}
+
+.CategoryTecnologia__right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.CategoryTecnologia__right-text,
+.CategoryTecnologia__right-icon {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #2e7d32;
+  transition: 0.3s ease;
+}
+
+.CategoryTecnologia__right:hover .CategoryTecnologia__right-text,
+.CategoryTecnologia__right:hover .CategoryTecnologia__right-icon {
+  color: #2e7d32;
+}
+
+.CategoryTecnologia__right:hover .CategoryTecnologia__right-icon {
+  transform: translateX(5px);
+}
+
+/* ==========================
+     GRID DE TARJETAS
+  ========================== */
+.CategoryTecnologia__container-card {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4rem;
+  padding: 1rem;
+}
+
+/* ==========================
+     TARJETA DE PRODUCTO
+  ========================== */
+.CategoryTecnologia__card {
+  width: 250px;
+  border-radius: 40px 40px 10px 10px;
+  box-shadow: 0 4px 8px rgba(243, 243, 243, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  height: auto;
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
+  opacity: 0;
+}
+
+.CategoryTecnologia__card:hover {
+  transform: translateY(-13px);
+  box-shadow: 0 8px 8px 0 rgba(118, 117, 117, 0.2);
+}
+
+/* ==========================
+     CONTENEDOR DE IMAGEN
+  ========================== */
+.image-containerCT {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-imageCT {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.CategoryTecnologia__card:hover .product-imageCT {
+  transform: scale(1.05);
+}
+
+/* ==========================
+     BADGE DE DESCUENTO
+  ========================== */
+.discount-badgeCT {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  background-color: #f97316;
+  color: #fff;
+  padding: 3px 8px; /* más pequeño */
+  font-size: 0.8rem; /* más chico */
+  font-weight: 600;
+  border-radius: 8px; /* más redondeado */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.3px;
+  line-height: 1;
+  z-index: 2;
+}
+
+/* ==========================
+     ICONO DEL CARRITO
+  ========================== */
+.cart-iconCT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 1.25rem;
+  color: #5b5a5a;
+  background-color: #eae8e8; /* Gris oscuro moderno */
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.CategoryTecnologia__card:hover .cart-iconCT {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.cart-iconCT:hover {
+  background-color: #eae8e8; /* Más oscuro al pasar el mouse */
+  transform: scale(1.12); /* Crecimiento más sutil y elegante */
+  color: #5b5a5a; /* Texto más claro al pasar mouse */
+}
+
+/* ==========================
+     INFORMACIÓN DEL PRODUCTO
+  ========================== */
+.product-infoCT {
+  padding: 10px 14px;
+  background-color: #ffffff;
+}
+
+.ratingCT {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.starCT {
+  font-size: 1rem;
+}
+
+.filledCT {
+  color: #facc15;
+}
+
+.emptyCT {
+  color: #d1d5db;
+}
+
+.rating-numberCT {
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.product-brandCT {
+  font-size: 0.9rem;
+  color: #417443;
+  font-weight: 600;
+}
+
+.product-titleCT {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 2px 0 8px;
+  color: #111827;
+}
+
+.price-sectionCT {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-currentCT {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.price-originalCT {
+  font-size: 0.8rem;
+  color: #727273;
+  text-decoration: line-through;
+}
+
+/* ==========================
+     ANIMACIONES
+  ========================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animaciones por índice */
+.CategoryTecnologia__card:nth-child(1) {
+  --i: 1;
+}
+.CategoryTecnologia__card:nth-child(2) {
+  --i: 2;
+}
+.CategoryTecnologia__card:nth-child(3) {
+  --i: 3;
+}
+.CategoryTecnologia__card:nth-child(4) {
+  --i: 4;
+}
+.CategoryTecnologia__card:nth-child(5) {
+  --i: 5;
+}
+/* Puedes seguir agregando más índices si necesitas */

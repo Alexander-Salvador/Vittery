@@ -1,7 +1,7 @@
-import './GeneralProducts.css';
 import { FaArrowRight, FaStar, FaRegStar } from 'react-icons/fa';
 import { TfiShoppingCart } from 'react-icons/tfi';
 import useProductManager from '../../hooks/Products/useProductManager';
+import './GeneralProducts.css';
 
 const GeneralProducts = () => {
   const { products, error, loading } = useProductManager();
@@ -52,7 +52,7 @@ const GeneralProducts = () => {
             <div className="generalProducts__card" key={product.id}>
               <div className="image-container">
                 {discount && (
-                  <div className="discount-badge">{discount}% OFF</div>
+                  <div className="discount-badgegp">{discount}% OFF</div>
                 )}
 
                 <img

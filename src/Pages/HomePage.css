@@ -9,7 +9,7 @@
   padding: 1rem;
 }
 
-.banner-container {
+.banner-hcontainer {
   margin-top: 2rem;
   width: 100%;
   margin-bottom: 2rem;
@@ -25,7 +25,7 @@
   margin: 2rem 0;
 }
 
-.GeneralProducts-container {
+.GeneralProducts-hcontainer {
   display: grid;
   width: 100%;
   max-width: 1250px;
@@ -34,23 +34,18 @@
   margin-bottom: 5rem;
 }
 
-.Products-offer-container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 2fr;
-  margin-top: 4rem;
-}
-
-.Products-offer-container h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #151515;
-  text-align: center;
-}
-
 .callToAction__hcontainer {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   margin-bottom: 2rem;
+}
+
+.CategoryElectroTecnologia__hcontainer {
+  display: grid;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
 }
