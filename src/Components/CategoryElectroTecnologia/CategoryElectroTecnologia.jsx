@@ -1,6 +1,7 @@
 import './CategoryElectroTecnologia.css';
 import useProductByCategory from '../../hooks/Products/useProductByCategory';
-import { FaStar, FaRegStar, FaArrowRight } from 'react-icons/fa';
+import { FaStar, FaRegStar } from 'react-icons/fa';
+import { IoTvOutline } from 'react-icons/io5';
 import { TfiShoppingCart } from 'react-icons/tfi';
 
 const CategoryElectroTecnologia = () => {
@@ -29,16 +30,20 @@ const CategoryElectroTecnologia = () => {
 
   return (
     <div className="CategoryTecnologia__container">
-      <div className="CategoryTecnologia__titles">
-        <div className="CategoryTecnologia__left">
-          <h2 className="CategoryTecnologia__title">Nuestros Productos</h2>
-          <p className="CategoryTecnologia__description">
+      <div className="CategoryTecnologia__titles-container">
+        <div className="CategoryTecnologia__information">
+          <IoTvOutline className="CategoryTecnologia__information-icon" />
+          <h2 className="CategoryTecnologia__information-title">TECNOLOGIA</h2>
+          <button className="CategoryTecnologia__information-button">Ver todo</button>
+        </div>
+      </div>
+
+      <div className="CategoryTecnologia__products-container">
+        <div className="CategoryTecnologia__left2">
+          <h2 className="CategoryTecnologia__title2">Nuestros Productos</h2>
+          <p className="CategoryTecnologia__description2">
             Nuestros productos más vendidos y de tendencia
           </p>
-        </div>
-        <div className="CategoryTecnologia__right">
-          <p className="CategoryTecnologia__right-text">Ver todos</p>
-          <FaArrowRight className="CategoryTecnologia__right-icon" />
         </div>
       </div>
 
@@ -62,7 +67,7 @@ const CategoryElectroTecnologia = () => {
                   onError={(e) => (e.target.src = '/placeholder.jpg')}
                 />
 
-                <div className="cart-icon">
+                <div className="cart-iconCT">
                   <TfiShoppingCart />
                 </div>
               </div>

@@ -4,55 +4,63 @@
 .CategoryTecnologia__container {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+  grid-template-columns: 200px 2fr 2fr;
 }
 
 /* ==========================
      TÍTULOS PRINCIPALES
   ========================== */
-.CategoryTecnologia__titles {
+.CategoryTecnologia__titles-container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   margin: 2rem 0;
+  gap: 1rem;
 }
 
-.CategoryTecnologia__title {
-  font-size: 2.4rem;
+.CategoryTecnologia__information {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.CategoryTecnologia__information-icon {
+  font-size: 3rem;
+  color: #4a4a4a;
+  background-color: rgb(37, 190, 47);
+  padding: 0.3rem;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+}
+
+.CategoryTecnologia__information-titles {
+  font-size: 1.4rem;
   color: #151515;
   margin-bottom: 10px;
 }
 
-.CategoryTecnologia__description {
+.CategoryTecnologia__information-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
   font-size: 1rem;
-  font-weight: 400;
-  color: #626262;
-  margin: 0;
-}
-
-.CategoryTecnologia__right {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.CategoryTecnologia__right-text,
-.CategoryTecnologia__right-icon {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #2e7d32;
-  transition: 0.3s ease;
-}
-
-.CategoryTecnologia__right:hover .CategoryTecnologia__right-text,
-.CategoryTecnologia__right:hover .CategoryTecnologia__right-icon {
-  color: #2e7d32;
-}
-
-.CategoryTecnologia__right:hover .CategoryTecnologia__right-icon {
-  transform: translateX(5px);
+/* ==========================
+     PRODUCTO CONTAINER
+  ========================== */
+.CategoryTecnologia__products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0;
+  gap: 1rem;
 }
 
 /* ==========================
@@ -61,22 +69,22 @@
 .CategoryTecnologia__container-card {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
+  gap: 1rem;
 }
 
 /* ==========================
      TARJETA DE PRODUCTO
   ========================== */
 .CategoryTecnologia__card {
-  width: 250px;
+  width: 200px;
+  height: auto;
   border-radius: 40px 40px 10px 10px;
   box-shadow: 0 4px 8px rgba(243, 243, 243, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
-  height: auto;
   animation: fadeInUp 0.5s ease forwards;
   animation-delay: calc(0.1s * var(--i));
   opacity: 0;
@@ -92,13 +100,13 @@
   ========================== */
 .image-containerCT {
   position: relative;
-  height: 220px;
+  /* height: 220px; */
   overflow: hidden;
   border-radius: 8px 8px 0 0;
 }
 
 .product-imageCT {
-  width: 100%;
+  width: 200px;
   height: 200px;
   object-fit: cover;
   transition: transform 0.4s ease;
