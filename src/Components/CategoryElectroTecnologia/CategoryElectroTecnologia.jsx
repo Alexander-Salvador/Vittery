@@ -1,7 +1,8 @@
 import './CategoryElectroTecnologia.css';
 import useProductByCategory from '../../hooks/Products/useProductByCategory';
-import { FaStar, FaRegStar } from 'react-icons/fa';
 import { IoTvOutline } from 'react-icons/io5';
+import { FaExclamationCircle } from 'react-icons/fa';
+
 import { TfiShoppingCart } from 'react-icons/tfi';
 
 const CategoryElectroTecnologia = () => {
@@ -17,38 +18,30 @@ const CategoryElectroTecnologia = () => {
     return Math.round(((original - current) / original) * 100);
   };
 
-  const renderStars = (rating) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const emptyStars = 5 - fullStars;
-    for (let i = 0; i < fullStars; i++)
-      stars.push(<FaStar key={`s${i}`} className="star filled" />);
-    for (let i = 0; i < emptyStars; i++)
-      stars.push(<FaRegStar key={`e${i}`} className="star empty" />);
-    return stars;
-  };
-
   return (
     <div className="CategoryTecnologia__container">
       <div className="CategoryTecnologia__titles-container">
         <div className="CategoryTecnologia__information">
           <IoTvOutline className="CategoryTecnologia__information-icon" />
           <h2 className="CategoryTecnologia__information-title">TECNOLOGIA</h2>
-          <button className="CategoryTecnologia__information-button">Ver todo</button>
+          <button className="CategoryTecnologia__information-button">
+            Ver todo
+          </button>
         </div>
       </div>
 
       <div className="CategoryTecnologia__products-container">
         <div className="CategoryTecnologia__left2">
-          <h2 className="CategoryTecnologia__title2">Nuestros Productos</h2>
-          <p className="CategoryTecnologia__description2">
-            Nuestros productos más vendidos y de tendencia
-          </p>
+          <img
+            src="/images/Categories/CategoryTecnology.png"
+            alt="Banner de Tecnología"
+            className="CategoryTecnologia__banner"
+          />
         </div>
       </div>
 
       <div className="CategoryTecnologia__container-card">
-        {products.map((product) => {
+        {products.slice(0, 3).map((product) => {
           const discount = getDiscountPercent(
             product.originalPrice,
             product.price
@@ -73,21 +66,40 @@ const CategoryElectroTecnologia = () => {
               </div>
 
               <div className="product-infoCT">
-                <div className="ratingCT">
-                  {renderStars(product.rating)}
-                  <span className="rating-numberCT">({product.rating})</span>
-                </div>
+                <div className="product-containerAllCT">
+                  <div className="product-containerTitles">
+                    <div className="product-brandCT">{product.brand}</div>
+                    <h3 className="product-titleCT">{product.title}</h3>
+                  </div>
 
-                <div className="product-brandCT">{product.brand}</div>
-                <h3 className="product-titleCT">{product.title}</h3>
+                  <div className="product-containerDelivery">
+                    <FaExclamationCircle className="productAlertIcon" />
+                    <h3 className="productAlertTitle">
+                      Despachado desde VITTERYS
+                    </h3>
+                  </div>
 
-                <div className="price-sectionCT">
-                  <span className="price-currentCT">S/ {product.price}</span>
-                  {product.originalPrice && (
-                    <span className="price-originalCT">
-                      S/ {product.originalPrice}
-                    </span>
-                  )}
+                  <div className="product-container-pricesCT">
+                    <div className="price-sectionOnline">
+                      <span className="name-priceOnline">Precio Online</span>
+                      {product.originalPrice && (
+                        <span className="price-OnlineCT">
+                          S/ {product.originalPrice}
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="price-sectionRegular">
+                      <span className="price-currentRegular">
+                        Precio Regular
+                      </span>
+                      {product.originalPrice && (
+                        <span className="price-current">
+                          S/ {product.originalPrice}
+                        </span>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
