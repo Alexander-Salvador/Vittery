@@ -1,20 +1,15 @@
-.cart__icon {
-  background-color: red;
+.cartIcon-container {
 }
 
-.cart-icon__icon {
+.cartIcon-icon {
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
   font-size: 2rem;
-  background-color: red;
 }
 
-.cart-icon__text {
+.cartIcon-text {
   font-size: 18px;
   font-family: system-ui;
   font-weight: 600;
-}
-
-.cart-icon:hover {
 }

@@ -4,10 +4,10 @@ import './CartIcon.css';
 
 const CartIcon = () => {
   return (
-    <div className="cart__icon">
-      <Link to="/cart" className="cart-icon">
-        <CiShoppingCart className="cart-icon__icon" />
-        <span className="cart-icon__text"></span>
+    <div className="cartIcon-container">
+      <Link to="/cart">
+        <CiShoppingCart className="cartIcon-icon" />
+        <span className="cartIcon-text"></span>
       </Link>
     </div>
   );

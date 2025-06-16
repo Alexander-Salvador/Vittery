@@ -1,4 +1,4 @@
-import { FaArrowRight, FaStar, FaRegStar } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import { TfiShoppingCart } from 'react-icons/tfi';
 import useProductManager from '../../hooks/Products/useProductManager';
 import './GeneralProducts.css';
@@ -14,17 +14,6 @@ const GeneralProducts = () => {
   const getDiscountPercent = (original, current) => {
     if (!original || original <= current) return null;
     return Math.round(((original - current) / original) * 100);
-  };
-
-  const renderStars = (rating) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const emptyStars = 5 - fullStars;
-    for (let i = 0; i < fullStars; i++)
-      stars.push(<FaStar key={`s${i}`} className="star filled" />);
-    for (let i = 0; i < emptyStars; i++)
-      stars.push(<FaRegStar key={`e${i}`} className="star empty" />);
-    return stars;
   };
 
   return (
@@ -50,36 +39,31 @@ const GeneralProducts = () => {
           );
           return (
             <div className="generalProducts__card" key={product.id}>
-              <div className="image-container">
+              <div className="image-containergp">
                 {discount && (
                   <div className="discount-badgegp">{discount}% OFF</div>
                 )}
-
+  
                 <img
                   src={product.images?.thumbnail}
                   alt={product.title}
-                  className="product-image"
+                  className="product-imagegp"
                   onError={(e) => (e.target.src = '/placeholder.jpg')}
                 />
 
-                <div className="cart-icon">
-                  <TfiShoppingCart />
+                <div className="cart-icon-gp-container">
+                  <TfiShoppingCart className="cart-icongp-icon" />
                 </div>
               </div>
 
-              <div className="product-info">
-                <div className="rating">
-                  {renderStars(product.rating)}
-                  <span className="rating-number">({product.rating})</span>
-                </div>
+              <div className="product-infogp">
+                <div className="product-brandgp">{product.brand}</div>
+                <h3 className="product-titlegp">{product.title}</h3>
 
-                <div className="product-brand">{product.brand}</div>
-                <h3 className="product-title">{product.title}</h3>
-
-                <div className="price-section">
-                  <span className="price-current">S/ {product.price}</span>
+                <div className="price-sectiongp">
+                  <span className="price-currentgp">S/ {product.price}</span>
                   {product.originalPrice && (
-                    <span className="price-original">
+                    <span className="price-originalgp">
                       S/ {product.originalPrice}
                     </span>
                   )}

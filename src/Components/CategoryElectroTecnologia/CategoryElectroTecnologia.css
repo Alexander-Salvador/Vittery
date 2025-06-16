@@ -75,8 +75,8 @@
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
   /* padding: 1rem; */
-  gap: 1rem;
 }
 
 /* ==========================
@@ -187,24 +187,6 @@
   gap: 1rem;
 }
 
-.starCT {
-  font-size: 1rem;
-}
-
-.filledCT {
-  color: #facc15;
-}
-
-.emptyCT {
-  color: #d1d5db;
-}
-
-.rating-numberCT {
-  font-size: 0.9rem;
-  color: #6b7280;
-  font-weight: 400;
-}
-
 .product-containerAllCT {
   display: flex;
   flex-direction: column;
@@ -233,7 +215,7 @@
 
 .productAlertTitle {
   font-size: 0.7rem;
-  color: #8d8d8d; 
+  color: #8d8d8d;
   font-weight: 400;
 }
 
