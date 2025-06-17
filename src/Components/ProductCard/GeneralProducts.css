@@ -170,6 +170,13 @@
   background-color: #ffffff;
 }
 
+.product-containerAllgp {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 5px;
+}
+
 .product-brandgp {
   font-size: 1rem;
   color: #417443;
@@ -183,25 +190,70 @@
   color: #111827;
 }
 
-.price-sectiongp {
+.product-containerDeliverygp {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 8px;
+  column-gap: 4px;
+}
+
+.productAlertTitlegp {
+  font-size: 0.7rem;
+  color: #8d8d8d;
+  font-weight: 400;
+}
+
+.productAlertIcongp {
+  font-size: 0.7rem;
+  color: #f00c0c;
+}
+
+.product-container-pricesgp {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 4px;
+}
+
+.price-sectionOnlinegp {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.name-priceOnlinegp {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f43c23;
+}
+
+.price-Onlinegp {
+  font-size: 0.9rem;
+  color: #f43c23;
+  font-weight: 700;
+  /* text-decoration: line-through; */
+}
+
+.price-sectionRegulargp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* column-gap: 20px; */
+  margin-top: -6px;
+}
+
+.price-currentRegulargp {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #0c0c0c;
 }
 
 .price-currentgp {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #111827;
-}
-
-.price-originalgp {
   font-size: 0.8rem;
-  color: #727273;
+  color: #000000;
+  font-weight: 400;
   text-decoration: line-through;
 }
-
 /* ==========================
    ANIMACIONES
 ========================== */

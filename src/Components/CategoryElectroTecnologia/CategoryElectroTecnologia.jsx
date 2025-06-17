@@ -65,23 +65,27 @@ const CategoryElectroTecnologia = () => {
                 </div>
               </div>
 
+              
+
+
               <div className="product-infoCT">
                 <div className="product-containerAllCT">
-                  <div className="product-containerTitles">
+                  
+                  <div className="product-containerTitlesCT">
                     <div className="product-brandCT">{product.brand}</div>
                     <h3 className="product-titleCT">{product.title}</h3>
                   </div>
 
-                  <div className="product-containerDelivery">
-                    <FaExclamationCircle className="productAlertIcon" />
-                    <h3 className="productAlertTitle">
+                  <div className="product-containerDeliveryCT">
+                    <FaExclamationCircle className="productAlertIconCT" />
+                    <h3 className="productAlertTitleCT">
                       Despachado desde VITTERYS
                     </h3>
                   </div>
 
                   <div className="product-container-pricesCT">
-                    <div className="price-sectionOnline">
-                      <span className="name-priceOnline">Precio Online</span>
+                    <div className="price-sectionOnlineCT">
+                      <span className="name-priceOnlineCT">Precio Online</span>
                       {product.originalPrice && (
                         <span className="price-OnlineCT">
                           S/ {product.originalPrice}
@@ -89,12 +93,12 @@ const CategoryElectroTecnologia = () => {
                       )}
                     </div>
 
-                    <div className="price-sectionRegular">
-                      <span className="price-currentRegular">
+                    <div className="price-sectionRegularCT">
+                      <span className="price-currentRegularCT">
                         Precio Regular
                       </span>
                       {product.originalPrice && (
-                        <span className="price-current">
+                        <span className="price-currentCT">
                           S/ {product.originalPrice}
                         </span>
                       )}

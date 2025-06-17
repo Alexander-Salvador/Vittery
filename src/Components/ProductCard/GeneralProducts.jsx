@@ -1,4 +1,4 @@
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaExclamationCircle } from 'react-icons/fa';
 import { TfiShoppingCart } from 'react-icons/tfi';
 import useProductManager from '../../hooks/Products/useProductManager';
 import './GeneralProducts.css';
@@ -43,7 +43,7 @@ const GeneralProducts = () => {
                 {discount && (
                   <div className="discount-badgegp">{discount}% OFF</div>
                 )}
-  
+
                 <img
                   src={product.images?.thumbnail}
                   alt={product.title}
@@ -57,16 +57,40 @@ const GeneralProducts = () => {
               </div>
 
               <div className="product-infogp">
-                <div className="product-brandgp">{product.brand}</div>
-                <h3 className="product-titlegp">{product.title}</h3>
+                <div className="product-containerAllgp">
+                  <div className="product-containerTitlesgp">
+                    <div className="product-brandgp">{product.brand}</div>
+                    <h3 className="product-titlegp">{product.title}</h3>
+                  </div>
 
-                <div className="price-sectiongp">
-                  <span className="price-currentgp">S/ {product.price}</span>
-                  {product.originalPrice && (
-                    <span className="price-originalgp">
-                      S/ {product.originalPrice}
-                    </span>
-                  )}
+                  <div className="product-containerDeliverygp">
+                    <FaExclamationCircle className="productAlertIcongp" />
+                    <h3 className="productAlertTitlegp">
+                      Despachado desde VITTERYS
+                    </h3>
+                  </div>
+
+                  <div className="product-container-pricesgp">
+                    <div className="price-sectionOnlinegp">
+                      <span className="name-priceOnlinegp">Precio Online</span>
+                      {product.originalPrice && (
+                        <span className="price-Onlinegp">
+                          S/ {product.price}
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="price-sectionRegulargp">
+                      <span className="price-currentRegulargp">
+                        Precio Regular
+                      </span>
+                      {product.originalPrice && (
+                        <span className="price-currentgp">
+                          S/ {product.originalPrice}
+                        </span>
+                      )}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

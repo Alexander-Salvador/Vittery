@@ -207,19 +207,19 @@
   color: #111827;
 }
 
-.product-containerDelivery {
+.product-containerDeliveryCT {
   display: flex;
   align-items: center;
   column-gap: 4px;
 }
 
-.productAlertTitle {
+.productAlertTitleCT {
   font-size: 0.7rem;
   color: #8d8d8d;
   font-weight: 400;
 }
 
-.productAlertIcon {
+.productAlertIconCT {
   font-size: 0.7rem;
   color: #f00c0c;
 }
@@ -231,13 +231,13 @@
   row-gap: 4px;
 }
 
-.price-sectionOnline {
+.price-sectionOnlineCT {
   display: flex;
   align-items: center;
   column-gap: 20px;
 }
 
-.name-priceOnline {
+.name-priceOnlineCT {
   font-size: 0.8rem;
   font-weight: 700;
   color: #f43c23;
@@ -250,19 +250,19 @@
   /* text-decoration: line-through; */
 }
 
-.price-sectionRegular {
+.price-sectionRegularCT {
   display: flex;
   align-items: center;
   column-gap: 30px;
 }
 
-.price-currentRegular {
+.price-currentRegularCT {
   font-size: 0.8rem;
   font-weight: 300;
   color: #0c0c0c;
 }
 
-.price-current {
+.price-currentCT {
   font-size: 0.9rem;
   color: #000000;
   font-weight: 300;
