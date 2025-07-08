@@ -5,13 +5,11 @@ import './Logo.css';
 
 const Logo = () => {
   return (
-    <div className="nav-logo">
-      <Link to="/">
-        <h1>
-          <SiCoinmarketcap className="nav-icon" />
-          Vitterys
-        </h1>
-      </Link>
+    <div className="nav-logo-container">
+      <h1 className="nav-logo-title">
+        <SiCoinmarketcap className="nav-logo-icon" />
+        Vitterys
+      </h1>
     </div>
   );
 };

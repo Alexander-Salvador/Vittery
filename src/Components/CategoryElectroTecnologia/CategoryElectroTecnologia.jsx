@@ -6,7 +6,7 @@ import { FaExclamationCircle } from 'react-icons/fa';
 import { TfiShoppingCart } from 'react-icons/tfi';
 
 const CategoryElectroTecnologia = () => {
-  const { products, loading, error } = useProductByCategory('supermercado');
+  const { products, loading, error } = useProductByCategory('tecnología');
 
   if (loading) return <p>Cargando productos...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -65,12 +65,8 @@ const CategoryElectroTecnologia = () => {
                 </div>
               </div>
 
-              
-
-
               <div className="product-infoCT">
                 <div className="product-containerAllCT">
-                  
                   <div className="product-containerTitlesCT">
                     <div className="product-brandCT">{product.brand}</div>
                     <h3 className="product-titleCT">{product.title}</h3>

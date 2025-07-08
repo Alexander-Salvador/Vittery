@@ -21,6 +21,7 @@
 .auth-buttons__icon {
   font-size: 2rem;
   font-family: system-ui;
+  color: #2e7153;
 }
 
 .auth-buttons__text {

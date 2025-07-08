@@ -1,95 +1,80 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #1e1f1e;
+}
+
 .footer__container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  row-gap: 30px;
+}
+
+/* FOOTER SECTION - CALL TO ACTION */
+
+.footer-calltoaction {
+  width: 100%;
+  display: grid;
   align-items: center;
-  padding: 20px;
-  background-color: #7dbeff;
-  border-top: 1px solid #ccc;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
 }
 
-a,
-li {
-  text-decoration: none;
-  list-style: none;
-  color: #848383;
-  font-family: system-ui;
-  font-weight: 500;
-}
-
-/* FOOTER SERVICIO AL CLIENTE */
-
-.footer__nav-servicio-al-cliente {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__nav-servicio-al-cliente-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.footer__nav-servicio-al-cliente-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-/* FOOTER MI CUENTA */
-
-.footer__nav-mi-cuenta {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__nav-mi-cuenta-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.footer__nav-mi-cuenta-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.footer__nav-mi-cuenta-list-item {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #848383;
-}
-
-/* FOOTER NUESTRAS EMPRESAS */
-
-.footer__nav-nuestras-empresas {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__nav-nuestras-empresas-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-/* footer__copyright */
-
-.footer__copyright {
+.footer-calltoaction-card-shipping,
+.footer-calltoaction-card-quality,
+.footer-calltoaction-card-payment {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  text-align: start;
+  color: #fff;
+  background-color: #2c2d2c;
   padding: 20px;
+  border-radius: 10px;
 }
 
-.footer__copyright-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.footer__copyright-nav-item {
-  font-size: 1rem;
+.footer-calltoaction-titles-container h3 {
+  font-size: 1.3rem;
   font-weight: 500;
+  color: #e1e1e1;
+}
+
+.footer-calltoaction-titles-container p {
+  font-size: 0.9rem;
+  color: #bebebe;
+}
+
+.footer-calltoaction-icon {
+  width: 55px;
+  height: 55px;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e7d32;
+  background-color: #2e7d320d;
+  border-radius: 10px;
+}
+
+.footer-calltoaction-icon {
+  font-size: 2rem;
+}
+
+/* FOOTER SECTION - LINKS */
+
+.footer-descriptions {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
 }

@@ -4,6 +4,8 @@ import CategoryElectroTecnologia from '../Components/CategoryElectroTecnologia/C
 import CategoryProducts from '../Components/CategoryProducts/CategoryProducts';
 import CallToActionDelivery from '../Components/ProductsCallToActions/CallToActionDelivery';
 import './HomePage.css';
+import CategoryHomeDecoration from '../Components/CategoryHomeDecoration/CategoryHomeDecoration';
+import CategorySuperMarket from '../Components/CategorySuperMarket/CategorySuperMarket';
 
 const HomePage = () => {
   return (
@@ -26,6 +28,14 @@ const HomePage = () => {
 
       <div className="CategoryElectroTecnologia-hcontainer">
         <CategoryElectroTecnologia />
+      </div>
+
+      <div className="CategoryHomeDecoration-hcontainer">
+        <CategoryHomeDecoration />
+      </div>
+
+      <div className="CategorySuperMarket-hcontainer">
+        <CategorySuperMarket />
       </div>
     </div>
   );

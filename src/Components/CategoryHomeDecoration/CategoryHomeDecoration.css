@@ -1,0 +1,314 @@
+/* ==========================
+   CONTENEDOR GENERAL
+========================== */
+.CategoryHomeDecoration__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 2fr 2fr;
+  column-gap: 2rem;
+}
+
+/* ==========================
+       TÍTULOS PRINCIPALES
+    ========================== */
+.CategoryHomeDecoration__titles-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.CategoryHomeDecoration__information {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.2rem;
+}
+
+.CategoryHomeDecoration__information-icon {
+  font-size: 3rem;
+  color: #ffffff;
+  background-color: #50ac83;
+  width: 60px;
+  height: 60px;
+  padding: 0.4rem;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+}
+
+.CategoryHomeDecoration__information-title {
+  font-size: 1.4rem;
+  color: #151515;
+  margin-bottom: 10px;
+}
+
+.CategoryHomeDecoration__information-button {
+  background-color: #50ac83;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* ==========================
+       PRODUCTO CONTAINER
+    ========================== */
+.CategoryHomeDecoration__products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.CategoryHomeDecoration__banner {
+  width: 100%;
+  height: 360px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* ==========================
+       GRID DE TARJETAS
+    ========================== */
+.CategoryHomeDecoration__container-card {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  /* padding: 1rem; */
+}
+
+/* ==========================
+       TARJETA DE PRODUCTO
+    ========================== */
+.CategoryHomeDecoration__card {
+  width: 200px;
+  height: auto;
+  border-radius: 40px 40px 10px 10px;
+  box-shadow: 0 4px 8px rgba(243, 243, 243, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease forwards;
+  animation-delay: calc(0.1s * var(--i));
+  opacity: 0;
+}
+
+.CategoryHomeDecoration__card:hover {
+  transform: translateY(-13px);
+  box-shadow: 0 8px 8px 0 rgba(118, 117, 117, 0.2);
+}
+
+/* ==========================
+       CONTENEDOR DE IMAGEN
+    ========================== */
+.image-containerCHD {
+  position: relative;
+  /* height: 220px; */
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-imageCHD {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  z-index: 1;
+}
+
+.CategoryHomeDecoration__card:hover .product-imageCHD {
+  transform: scale(1.05);
+}
+
+/* ==========================
+       BADGE DE DESCUENTO
+    ========================== */
+.discount-badgeCHD {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  background-color: #f97316;
+  color: #fff;
+  padding: 3px 8px; /* más pequeño */
+  font-size: 0.8rem; /* más chico */
+  font-weight: 600;
+  border-radius: 8px; /* más redondeado */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.3px;
+  line-height: 1;
+  z-index: 2;
+}
+
+/* ==========================
+       ICONO DEL CARRITO
+    ========================== */
+.cart-iconCHD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 1.25rem;
+  color: #5b5a5a;
+  background-color: #eae8e8; /* Gris oscuro moderno */
+  border-radius: 50%;
+  padding: 10px;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.CategoryHomeDecoration__card:hover .cart-iconCHD {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.cart-iconCHD:hover {
+  background-color: #eae8e8; /* Más oscuro al pasar el mouse */
+  transform: scale(1.12); /* Crecimiento más sutil y elegante */
+  color: #5b5a5a; /* Texto más claro al pasar mouse */
+}
+
+/* ==========================
+       INFORMACIÓN DEL PRODUCTO
+    ========================== */
+.product-infoCHD {
+  padding: 10px 14px;
+  width: 100%;
+  height: 150px;
+  border-radius: 0 0 10px 10px;
+  gap: 1rem;
+}
+
+.product-containerAllCHD {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 14px;
+}
+
+.product-brandCHD {
+  font-size: 0.9rem;
+  color: #50ac83;
+  font-weight: 600;
+}
+
+.product-titleCHD {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 2px 0 8px;
+  color: #111827;
+}
+
+.product-containerDeliveryCHD {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.productAlertTitleCHD {
+  font-size: 0.7rem;
+  color: #8d8d8d;
+  font-weight: 400;
+}
+
+.productAlertIconCHD {
+  font-size: 0.7rem;
+  color: #f00c0c;
+}
+
+.product-container-pricesCHD {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 4px;
+}
+
+.price-sectionOnlineCHD {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.name-priceOnlineCHD {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f43c23;
+}
+
+.price-OnlineCHD {
+  font-size: 1rem;
+  color: #f43c23;
+  font-weight: 700;
+  /* text-decoration: line-through; */
+}
+
+.price-sectionRegularCHD {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.price-currentRegularCHD {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #0c0c0c;
+}
+
+.price-currentCHD {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+
+/* ==========================
+       ANIMACIONES
+    ========================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2) rotate(5deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animaciones por índice */
+.CategoryHomeDecoration__card:nth-child(1) {
+  --i: 1;
+}
+.CategoryHomeDecoration__card:nth-child(2) {
+  --i: 2;
+}
+.CategoryHomeDecoration__card:nth-child(3) {
+  --i: 3;
+}
+.CategoryHomeDecoration__card:nth-child(4) {
+  --i: 4;
+}
+.CategoryHomeDecoration__card:nth-child(5) {
+  --i: 5;
+}
+/* Puedes seguir agregando más índices si necesitas */

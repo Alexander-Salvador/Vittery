@@ -49,3 +49,21 @@
   padding: 0 1rem;
   margin-bottom: 5rem;
 }
+
+.CategoryHomeDecoration-hcontainer {
+  display: grid;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}
+
+.CategorySuperMarket-hcontainer {
+  display: grid;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+}

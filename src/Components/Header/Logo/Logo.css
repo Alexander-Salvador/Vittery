@@ -1,24 +1,28 @@
-.nav-logo {
+.nav-logo-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
 }
 
-h1 {
-  font-size: 2rem;
+.nav-logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #2e7153;
-  font-weight: 900;
-  margin-left: 10px;
+  font-weight: 800;
   font-family: sans-serif;
   text-transform: uppercase;
-  text-align: center;
-  line-height: 1.5;
-  margin: 0;
 }
 
-.nav-icon {
+.link-no-style {
+  text-decoration: none;
+  color: inherit; /* conserva el color del h1 */
+  display: inline-block; /* asegura que no rompa el layout */
+}
+
+.nav-logo-icon {
   width: 24px;
   height: 24px;
 }
