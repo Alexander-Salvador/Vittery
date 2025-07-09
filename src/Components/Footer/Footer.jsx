@@ -2,6 +2,7 @@
 import { MdPayment, MdAccessTime } from 'react-icons/md';
 import { GoShieldCheck } from 'react-icons/go';
 import { LiaShippingFastSolid } from 'react-icons/lia';
+import { SiCoinmarketcap } from 'react-icons/si';
 import './Footer.css';
 
 const Footer = () => {
@@ -40,51 +41,116 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <fragment className="footer-calltoaction-divider" />
 
         <div className="footer-descriptions">
           <div className="footer-descriptions-basics">
-            <h2>Vitterys</h2>
-            <p>
-              En <strong>Tu Tienda</strong>, nos esforzamos por ofrecerte la
-              mejor experiencia de compra en línea. Si tienes alguna pregunta o
-              necesitas ayuda, no dudes en contactarnos.
+            <h2 className="footer-descriptions-basics-title">
+              <SiCoinmarketcap className="footer-icon-logo" />
+              Vitterys
+            </h2>
+            <p className="footer-descriptions-basics-text">
+              En{' '}
+              <strong className="footer-descriptions-basics-text-strong">
+                Vitterys somos un equipo
+              </strong>{' '}
+              comprometido con brindarte la mejor experiencia de compra online.
+              Si tienes preguntas o necesitas ayuda, estamos aquí para ti.
             </p>
           </div>
 
           <div className="footer-descriptions-links">
-            <h2>Enlaces Útiles</h2>
-            <ul>
-              <li>
-                <a href="#">Política de Privacidad</a>
+            <h2 className="footer-descriptions-links-title">Enlaces Útiles</h2>
+            <ul className="footer-descriptions-links-list">
+              <li className="footer-descriptions-links-item">
+                <a className="footer-descriptions-links-item-link" href="#">
+                  Inicio
+                </a>
               </li>
-              <li>
-                <a href="#">Términos y Condiciones</a>
+              <li className="footer-descriptions-links-item">
+                <a className="footer-descriptions-links-item-link" href="#">
+                  Ofertas
+                </a>
               </li>
-              <li>
-                <a href="#">Preguntas Frecuentes</a>
+              <li className="footer-descriptions-links-item">
+                <a className="footer-descriptions-links-item-link" href="#">
+                  Categorías
+                </a>
+              </li>
+              <li className="footer-descriptions-links-item">
+                <a className="footer-descriptions-links-item-link" href="#">
+                  Productos
+                </a>
               </li>
             </ul>
           </div>
 
           <div className="footer-descriptions-contact">
-            <h2>Contacto</h2>
-            <ul>
-              <li>
-                <a href="mailto:info@vitterys.com">info@vitterys.com</a>
+            <h2 className="footer-descriptions-contact-title">
+              Atención al Cliente
+            </h2>
+            <ul className="footer-descriptions-contact-list">
+              <li className="footer-descriptions-contact-item">
+                <a
+                  className="footer-descriptions-contact-item-link"
+                  href="mailto:info@vitterys.com">
+                  Centro de Ayuda
+                </a>
+              </li>
+              <li className="footer-descriptions-contact-item">
+                <a
+                  className="footer-descriptions-contact-item-link"
+                  href="mailto:info@vitterys.com">
+                  Envíos y Devoluciones
+                </a>
+              </li>
+              <li className="footer-descriptions-contact-item">
+                <a
+                  className="footer-descriptions-contact-item-link"
+                  href="mailto:info@vitterys.com">
+                  Términos y Condiciones
+                </a>
+              </li>
+              <li className="footer-descriptions-contact-item">
+                <a
+                  className="footer-descriptions-contact-item-link"
+                  href="mailto:info@vitterys.com">
+                  Política y Privacidad
+                </a>
               </li>
             </ul>
           </div>
 
           <div className="footer-descriptions-hours">
-            <h2>Horario de Atención</h2>
-            <ul>
-              <li>
-                <MdAccessTime className="footer-calltoaction-icon" />
-                Lunes a Viernes: 9:00 AM - 6:00 PM
+            <h2 className="footer-descriptions-hours-title">Contacto</h2>
+            <ul className="footer-descriptions-hours-list">
+              <li className="footer-descriptions-hours-svg">
+                <img
+                  className="footer-calltoaction-icon-svg"
+                  src="/images/Footer/email-footer.svg"
+                  alt="Horario de Atención"
+                />
+                <a className='footer-descriptions-hours-item-link' href="mailto:Soporte.vitterys@gmail.com">
+                  Soporte.vitterys@gmail.com
+                </a>
               </li>
-              <li>
-                <MdAccessTime className="footer-calltoaction-icon" />
-                Sábado: 10:00 AM - 4:00 PM
+              <li className="footer-descriptions-hours-svg">
+                <img
+                  className="footer-calltoaction-icon-svg"
+                  src="/images/Footer/phone-footer.svg"
+                  alt="Horario de Atención"
+                />
+                <a className='footer-descriptions-hours-item-link' href="tel:+15551234567">+1 (555) 123-4567</a>
+              </li>
+              <li className="footer-descriptions-hours-svg">
+                <img
+                  className="footer-calltoaction-icon-svg"
+                  src="/images/Footer/location-footer.svg"
+                  alt="Horario de Atención"
+                />
+                <a className='footer-descriptions-hours-item-link' href="https://www.google.com/maps/place/123+Main+St,+New+York,+NY+10001">
+                  123 Main St, New York, NY 10001
+                </a>
               </li>
             </ul>
           </div>

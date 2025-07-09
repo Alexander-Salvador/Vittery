@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.link-no-style {
+  text-decoration: none;
+  color: inherit; /* conserva el color del h1 */
+  display: inline-block; /* asegura que no rompa el layout */
+}
+
 .nav-logo-title {
   display: flex;
   align-items: center;
@@ -14,12 +20,6 @@
   font-weight: 800;
   font-family: sans-serif;
   text-transform: uppercase;
-}
-
-.link-no-style {
-  text-decoration: none;
-  color: inherit; /* conserva el color del h1 */
-  display: inline-block; /* asegura que no rompa el layout */
 }
 
 .nav-logo-icon {

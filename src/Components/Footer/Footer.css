@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 40px;
   background-color: #1e1f1e;
+  font-family: sans-serif;
 }
 
 .footer__container {
@@ -13,7 +14,7 @@
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 1rem;
-  row-gap: 30px;
+  row-gap: 40px;
 }
 
 /* FOOTER SECTION - CALL TO ACTION */
@@ -23,8 +24,9 @@
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
+  grid-template-columns: repeat(3, 370px);
+  /* column-gap: 1rem; */
+  /* padding: 15px; */
 }
 
 .footer-calltoaction-card-shipping,
@@ -34,38 +36,34 @@
   flex-direction: row;
   align-items: center;
   text-align: start;
-  color: #fff;
   background-color: #2c2d2c;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
 }
 
 .footer-calltoaction-titles-container h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #e1e1e1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #d7d6d6;
 }
 
 .footer-calltoaction-titles-container p {
   font-size: 0.9rem;
-  color: #bebebe;
+  color: #b4b4b4;
 }
 
 .footer-calltoaction-icon {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   margin-right: 1rem;
-  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2e7d32;
-  background-color: #2e7d320d;
+  /* font-size: 4rem; */
+  color: #e4e4e4;
+  background-color: #525453;
   border-radius: 10px;
-}
-
-.footer-calltoaction-icon {
-  font-size: 2rem;
+  padding: 0.6rem;
 }
 
 /* FOOTER SECTION - LINKS */
@@ -73,8 +71,141 @@
 .footer-descriptions {
   width: 100%;
   display: grid;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  /* justify-content: space-between; */
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 1rem;
+  column-gap: 4rem;
+}
+
+.footer-descriptions-basics-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #cecece;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-descriptions-basics-text {
+  font-size: 1rem;
+  color: #cecece;
+  margin-top: 0.5rem;
+  line-height: 1.3;
+}
+
+.footer-descriptions-basics-text-strong {
+  color: #318761;
+}
+
+/* ENLACES ÚTILES */
+
+.footer-descriptions-links-title {
+  color: #cecece;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footer-descriptions-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.footer-descriptions-links-item {
+  /* display: flex;
+  align-items: center;
+  justify-content: start; */
+  /* margin-bottom: 0.5rem; */
+}
+
+.footer-descriptions-links-item-link {
+  color: #cecece;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* CONTACTO  */
+
+.footer-descriptions-contact-title {
+  color: #cecece;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-descriptions-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.footer-descriptions-contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-descriptions-contact-item-link {
+  color: #cecece;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-calltoaction-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #2c2d2c;
+  margin: 20px 0;
+}
+
+.footer-descriptions-hours-title {
+  color: #cecece;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-descriptions-hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.footer-descriptions-hours-svg {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.footer-calltoaction-icon-svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  fill: #cecece;
+  /* color: #cecece; */
+  background-color: #525453;
+  border-radius: 6px;
+  padding: 0.3rem;
+}
+
+.footer-descriptions-hours-item-link {
+  color: #cecece;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
