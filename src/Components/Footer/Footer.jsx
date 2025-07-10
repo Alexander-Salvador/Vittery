@@ -1,9 +1,12 @@
 // import { Link } from 'react-router-dom';
-import { MdPayment, MdAccessTime } from 'react-icons/md';
+import { MdPayment } from 'react-icons/md';
 import { GoShieldCheck } from 'react-icons/go';
 import { LiaShippingFastSolid } from 'react-icons/lia';
 import { SiCoinmarketcap } from 'react-icons/si';
+import IconWhatsApp from '../GeneralIcons/IconWhatsApp';
+import IconInstagram from '../GeneralIcons/IconInstagram';
 import './Footer.css';
+import IconTikTok from '../GeneralIcons/IconTikTok';
 
 const Footer = () => {
   return (
@@ -41,6 +44,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         <fragment className="footer-calltoaction-divider" />
 
         <div className="footer-descriptions">
@@ -57,6 +61,14 @@ const Footer = () => {
               comprometido con brindarte la mejor experiencia de compra online.
               Si tienes preguntas o necesitas ayuda, estamos aquí para ti.
             </p>
+
+            <div className="footer-calltoaction-social">
+              <div className="footer-calltoaction-social-icons">
+                <IconWhatsApp className="footer-calltoaction-social-icon12" />
+                <IconInstagram className="footer-calltoaction-social-icon12" />
+                <IconTikTok className="footer-calltoaction-social-icon12" />
+              </div>
+            </div>
           </div>
 
           <div className="footer-descriptions-links">
@@ -130,7 +142,9 @@ const Footer = () => {
                   src="/images/Footer/email-footer.svg"
                   alt="Horario de Atención"
                 />
-                <a className='footer-descriptions-hours-item-link' href="mailto:Soporte.vitterys@gmail.com">
+                <a
+                  className="footer-descriptions-hours-item-link"
+                  href="mailto:Soporte.vitterys@gmail.com">
                   Soporte.vitterys@gmail.com
                 </a>
               </li>
@@ -140,7 +154,11 @@ const Footer = () => {
                   src="/images/Footer/phone-footer.svg"
                   alt="Horario de Atención"
                 />
-                <a className='footer-descriptions-hours-item-link' href="tel:+15551234567">+1 (555) 123-4567</a>
+                <a
+                  className="footer-descriptions-hours-item-link"
+                  href="tel:+15551234567">
+                  +1 (555) 123-4567
+                </a>
               </li>
               <li className="footer-descriptions-hours-svg">
                 <img
@@ -148,11 +166,32 @@ const Footer = () => {
                   src="/images/Footer/location-footer.svg"
                   alt="Horario de Atención"
                 />
-                <a className='footer-descriptions-hours-item-link' href="https://www.google.com/maps/place/123+Main+St,+New+York,+NY+10001">
+                <a
+                  className="footer-descriptions-hours-item-link"
+                  href="https://www.google.com/maps/place/123+Main+St,+New+York,+NY+10001">
                   123 Main St, New York, NY 10001
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+        <fragment className="footer-calltoaction-divider-copyright" />
+
+        <div className="footer-copyright">
+          <div className="footer-copyright-left">
+            <p className="footer-copyright-text">
+              © 2025 Vitterys. Todos los derechos reservados.
+            </p>
+          </div>
+          <div className="footer-copyright-right">
+            <p className="footer-copyright-text">
+              Diseñado por{' '}
+              <a
+                className="footer-copyright-link"
+                href="https://www.example.com">
+                Alexander Salvador ❤️
+              </a>
+            </p>
           </div>
         </div>
       </div>
