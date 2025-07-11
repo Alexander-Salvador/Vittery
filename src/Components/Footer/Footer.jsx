@@ -7,6 +7,10 @@ import IconWhatsApp from '../GeneralIcons/IconWhatsApp';
 import IconInstagram from '../GeneralIcons/IconInstagram';
 import './Footer.css';
 import IconTikTok from '../GeneralIcons/IconTikTok';
+import IconEmail from '../GeneralIcons/IconEmail';
+import IconPhone from '../GeneralIcons/IconPhone';
+import IconLocation from '../GeneralIcons/IconLocation';
+import IconArrowRight from '../GeneralIcons/IconArrowRight';
 
 const Footer = () => {
   return (
@@ -134,47 +138,60 @@ const Footer = () => {
           </div>
 
           <div className="footer-descriptions-hours">
-            <h2 className="footer-descriptions-hours-title">Contacto</h2>
-            <ul className="footer-descriptions-hours-list">
-              <li className="footer-descriptions-hours-svg">
-                <img
-                  className="footer-calltoaction-icon-svg"
-                  src="/images/Footer/email-footer.svg"
-                  alt="Horario de Atención"
+            <div className="footer-description-hours-container">
+              <h2 className="footer-descriptions-hours-title">Contacto</h2>
+              <ul className="footer-descriptions-hours-list">
+                <li className="footer-descriptions-hours-svg">
+                  <IconEmail className="footer-descriptions-hours-item-icon" />
+                  <a
+                    className="footer-descriptions-hours-item-link"
+                    href="mailto:Soporte.vitterys@gmail.com">
+                    Soporte.vitterys@gmail.com
+                  </a>
+                </li>
+                <li className="footer-descriptions-hours-svg">
+                  <IconPhone className="footer-descriptions-hours-item-icon" />
+                  <a
+                    className="footer-descriptions-hours-item-link"
+                    href="tel:+15551234567">
+                    +1 (555) 123-4567
+                  </a>
+                </li>
+                <li className="footer-descriptions-hours-svg">
+                  <IconLocation className="footer-descriptions-hours-item-icon" />
+                  <a
+                    className="footer-descriptions-hours-item-link"
+                    href="https://www.google.com/maps/place/123+Main+St,+New+York,+NY+10001">
+                    123 Main St, New York, NY 10001
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer-description-hours-container-bottom">
+              <h2 className="footer-descriptions-hours-titleh2">
+                Boletín Informativo
+              </h2>
+              <p className="footer-descriptions-hours-text2">
+                Suscribete para recibir ofertas.
+              </p>
+              <form className="footer-descriptions-hours-form">
+                <input
+                  type="email"
+                  className="footer-descriptions-hours-input"
+                  placeholder="Hola@gmail.com"
+                  required
                 />
-                <a
-                  className="footer-descriptions-hours-item-link"
-                  href="mailto:Soporte.vitterys@gmail.com">
-                  Soporte.vitterys@gmail.com
-                </a>
-              </li>
-              <li className="footer-descriptions-hours-svg">
-                <img
-                  className="footer-calltoaction-icon-svg"
-                  src="/images/Footer/phone-footer.svg"
-                  alt="Horario de Atención"
-                />
-                <a
-                  className="footer-descriptions-hours-item-link"
-                  href="tel:+15551234567">
-                  +1 (555) 123-4567
-                </a>
-              </li>
-              <li className="footer-descriptions-hours-svg">
-                <img
-                  className="footer-calltoaction-icon-svg"
-                  src="/images/Footer/location-footer.svg"
-                  alt="Horario de Atención"
-                />
-                <a
-                  className="footer-descriptions-hours-item-link"
-                  href="https://www.google.com/maps/place/123+Main+St,+New+York,+NY+10001">
-                  123 Main St, New York, NY 10001
-                </a>
-              </li>
-            </ul>
+                <button
+                  type="submit"
+                  className="footer-descriptions-hours-button">
+                  <IconArrowRight className="footer-descriptions-hours-iconArrow" />
+                </button>
+              </form>
+            </div>
           </div>
         </div>
+
         <fragment className="footer-calltoaction-divider-copyright" />
 
         <div className="footer-copyright">

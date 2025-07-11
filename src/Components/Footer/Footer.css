@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  background-color: #1e1f1e;
+  background-color: #262424;
   font-family: sans-serif;
 }
 
@@ -37,6 +37,11 @@
   background-color: #2c2d2c;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .footer-calltoaction-titles-container h3 {
@@ -59,7 +64,7 @@
   justify-content: center;
   /* font-size: 4rem; */
   color: #e4e4e4;
-  background-color: #525453;
+  background-color: #235c40;
   border-radius: 10px;
   padding: 0.6rem;
 }
@@ -93,7 +98,7 @@
 }
 
 .footer-descriptions-basics-text-strong {
-  color: #318761;
+  color: #3c945b;
 }
 
 /* ENLACES ÚTILES */
@@ -170,6 +175,16 @@
   margin: 20px 0;
 }
 
+/* FOOTER CONTACTO */
+
+.footer-descriptions-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1.5rem;
+}
+
 .footer-descriptions-hours-title {
   color: #cecece;
   font-size: 1rem;
@@ -194,6 +209,17 @@
   justify-content: start;
 }
 
+.footer-descriptions-hours-item-icon {
+  width: 30px;
+  height: 30px;
+  fill: #cecece;
+  background-color: rgb(62, 62, 62);
+  border-radius: 8px;
+  padding: 0.4rem;
+  transition: fill 0.3s ease;
+  margin-right: 0.5rem;
+}
+
 .footer-calltoaction-icon-svg {
   width: 24px;
   height: 24px;
@@ -212,6 +238,82 @@
   transition: color 0.3s ease;
 }
 
+.footer-description-hours-container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #303030;
+}
+
+.footer-descriptions-hours-titleh2 {
+  color: #cecece;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer-descriptions-hours-text2 {
+  font-size: 0.8rem;
+  color: #cecece;
+  /* margin-top: 0.5rem; */
+  line-height: 1.3;
+}
+
+.footer-descriptions-hours-form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  border: none;
+  background-color: #3b3b3b;
+}
+
+.footer-descriptions-hours-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  background-color: #3b3b3b;
+  color: #cecece;
+  font-size: 1rem;
+  outline: none;
+  transition: background-color 0.3s ease;
+
+  &::placeholder {
+    color: #a8a8a8;
+    opacity: 0.8;
+    font-size: 14px;
+  }
+
+  &:focus {
+    background-color: #3c3d3c;
+  }
+}
+
+.footer-descriptions-hours-button {
+  background-color: #318761;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #267a4c;
+  }
+}
+
+.footer-descriptions-hours-iconArrow {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+  /* margin-left: 0.5rem; */
+}
 /* FOOTER COPYRIGHT */
 
 .footer-calltoaction-divider-copyright {
