@@ -4,20 +4,50 @@
   list-style: none;
   position: relative;
 }
+
 .nav__menu-item {
   font-size: 1.1rem;
   font-family: system-ui;
-  font-weight: 400;
-  color: #666666;
+  font-weight: 500;
+  color: #333333; /* Gris Oscuro (Texto) */
   text-decoration: none;
   padding: 0.5rem 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .nav__menu-item:hover {
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  color: #10b981;
+  color: #2E7D32; /* Verde Fresco (Primario) */
+}
+
+/* Efecto de subrayado dinámico */
+.nav__menu-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #2E7D32; /* Verde Fresco (Primario) */
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.nav__menu-item:hover::after {
+  transform: scaleX(1);
+}
+
+/* Estilo para el NavLink activo */
+.nav__menu-item.active {
+  color: #2E7D32; /* Verde Fresco (Primario) */
+  font-weight: 700;
+}
+
+.nav__menu-item.active::after {
+  transform: scaleX(1);
 }
 
 .nav__menu-category-dropdown {

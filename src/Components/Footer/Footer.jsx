@@ -5,12 +5,12 @@ import { LiaShippingFastSolid } from 'react-icons/lia';
 import { SiCoinmarketcap } from 'react-icons/si';
 import IconWhatsApp from '../GeneralIcons/IconWhatsApp';
 import IconInstagram from '../GeneralIcons/IconInstagram';
-import './Footer.css';
 import IconTikTok from '../GeneralIcons/IconTikTok';
 import IconEmail from '../GeneralIcons/IconEmail';
 import IconPhone from '../GeneralIcons/IconPhone';
 import IconLocation from '../GeneralIcons/IconLocation';
 import IconArrowRight from '../GeneralIcons/IconArrowRight';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-calltoaction-titles-container">
-              <h3 className="footer-calltoaction-title">Envío Exprés Gratis</h3>
+              <h3 className="footer-calltoaction-title">Envío Gratis</h3>
               <p>Compras superiores a $50.</p>
             </div>
           </div>
@@ -33,7 +33,7 @@ const Footer = () => {
               <GoShieldCheck className="footer-calltoaction-icon" />
             </div>
             <div className="footer-calltoaction-titles-container">
-              <h3>Garantía de Satisfacción</h3>
+              <h3>Compra Segura</h3>
               <p>Satisfacción 100% garantizada.</p>
             </div>
           </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               <MdPayment className="footer-calltoaction-icon" />
             </div>
             <div className="footer-calltoaction-titles-container">
-              <h3>Pago Seguro</h3>
+              <h3>Entrega Rápida</h3>
               <p>¡Compra con total confianza!</p>
             </div>
           </div>
@@ -169,25 +169,26 @@ const Footer = () => {
             </div>
 
             <div className="footer-description-hours-container-bottom">
-              <h2 className="footer-descriptions-hours-titleh2">
-                Boletín Informativo
-              </h2>
+              <h2 className="footer-descriptions-hours-titleh2">Promociones</h2>
               <p className="footer-descriptions-hours-text2">
-                Suscribete para recibir ofertas.
+                Suscribete para recibir ofertas especiales.
               </p>
-              <form className="footer-descriptions-hours-form">
-                <input
-                  type="email"
-                  className="footer-descriptions-hours-input"
-                  placeholder="Hola@gmail.com"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="footer-descriptions-hours-button">
-                  <IconArrowRight className="footer-descriptions-hours-iconArrow" />
-                </button>
-              </form>
+
+              <div className="footer-form-container">
+                <form className="footer-descriptions-hours-form">
+                  <input
+                    type="email"
+                    className="footer-descriptions-hours-input"
+                    placeholder="Hola@gmail.com"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="footer-descriptions-hours-button">
+                    <IconArrowRight className="footer-descriptions-hours-iconArrow" />
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

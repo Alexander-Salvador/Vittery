@@ -6,7 +6,7 @@
 }
 
 .product-card {
-  border: 1px solid #f0f0f0;
+  border: 1px solid #E0E0E0; /* Gris Neutro para bordes */
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.2s;
@@ -33,7 +33,7 @@
 .product-card-bottom {
   border-radius: 20px 20px 0 0;
   padding: 1rem;
-  background-color: #fff0fb;
+  background-color: #ffffff; /* Fondo Blanco Limpio */
 }
 
 .product-name {
@@ -53,40 +53,37 @@
 }
 
 .button-buy-now {
-  background-color: #e41e31;
+  background-color: #F97316; /* Naranja Vital */
   color: #ffffff;
   padding: 0.5rem 0.5rem;
   border-radius: 8px;
   cursor: pointer;
-  border: solid 1px #e32817;
+  border: solid 1px #F97316; /* Naranja Vital */
   font-size: 0.8rem;
   font-weight: bold;
   font-family: system-ui;
   transition: background-color 0.4s;
 }
-/* 193a3f */
+
 .button-buy-now:hover {
-  background-color: #f23b3b;
+  background-color: #F97316; /* Naranja Vital */
   color: #ffffff;
-  border: solid 2px #e41e31;
+  border: solid 2px #F97316;
 }
-/* .button-buy-now:active {
-  background-color: #ffffff;
-  color: #f71010;
-} */
+
 .button-buy-now:focus {
   outline: none;
 }
 
 .product-span-price {
-  color: #e41e31;
+  color: #F97316; /* Naranja Vital */
   font-size: 1rem;
   font-family: system-ui;
   margin-left: 2px;
 }
 
 .offer-price {
-  color: #e61212;
+  color: #F97316; /* Naranja Vital */
   font-weight: bold;
   font-size: 1.3rem;
   font-family: system-ui;
@@ -96,7 +93,7 @@
   position: sticky;
   top: 8px; /* Espacio respecto arriba del contenedor */
   left: 8px; /* Espacio respecto la izquierda */
-  background-color: #ff3d00;
+  background-color: #F97316; /* Naranja Vital */
   color: #fff;
   font-weight: bold;
   padding: 5px 10px;

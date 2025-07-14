@@ -26,13 +26,13 @@
 .calltoaction-card h3 {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #151515;
-  margin-bottom: 0.5rem;
+  color: #333333; /* Gris Oscuro (Texto) */
+  margin-bottom: 5px;
 }
 .calltoaction-card p {
   font-size: 1rem;
-  color: #6f6f6f;
-  margin-bottom: 1rem;
+  color: #666666; /* Gris Secundario para párrafos */
+  margin: 0;
 }
 
 .calltoaction-icon {
@@ -43,7 +43,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2e7d32;
-  background-color: #2e7d320d;
+  color: #2E7D32; /* Verde Fresco (Primario) */
+  background-color: #2e7d320d; /* Verde Fresco (Transparente) */
   border-radius: 10px;
+  font-size: 2rem;
 }

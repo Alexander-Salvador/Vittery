@@ -20,14 +20,14 @@
 
 .generalProducts__title {
   font-size: 2.4rem;
-  color: #151515;
+  color: #2E7D32; /* Verde Fresco (Primario) */
   margin-bottom: 10px;
 }
 
 .generalProducts__description {
   font-size: 1rem;
   font-weight: 400;
-  color: #626262;
+  color: #999; /* Gris Secundario para párrafos */
   margin: 0;
 }
 
@@ -42,13 +42,13 @@
 .generalProducts__right-icon {
   font-size: 1.1rem;
   font-weight: 400;
-  color: #2e7d32;
+  color: #2E7D32; /* Verde Fresco (Primario) */
   transition: 0.3s ease;
 }
 
 .generalProducts__right:hover .generalProducts__right-text,
 .generalProducts__right:hover .generalProducts__right-icon {
-  color: #2e7d32;
+  color: #2E7D32; /* Verde Fresco (Primario) */
 }
 
 .generalProducts__right:hover .generalProducts__right-icon {
@@ -116,8 +116,8 @@
   position: absolute;
   top: 10px;
   left: 12px;
-  background-color: #f97316;
-  color: #fff;
+  background-color: #F97316; /* Naranja Vital */
+  color: white;
   padding: 3px 8px; /* más pequeño */
   font-size: 0.8rem; /* más chico */
   font-weight: 600;
@@ -139,7 +139,7 @@
   bottom: 12px;
   right: 12px;
   font-size: 1.25rem;
-  color: #2e7d32;
+  color: #2E7D32; /* Verde Fresco (Primario) */
   background-color: #ffffff; /* Gris oscuro moderno */
   border-radius: 50%;
   padding: 10px;
@@ -154,8 +154,9 @@
 .cart-icon-gp-container:hover {
   background-color: #ffffff; /* Más oscuro al pasar el mouse */
   transform: scale(1.12); /* Crecimiento más sutil y elegante */
-  color: #2e7d32; /* Texto más claro al pasar mouse */
+  color: #2E7D32; /* Verde Fresco (Primario) */
 }
+
 .generalProducts__card:hover .cart-icon-gp-container {
   opacity: 1;
   pointer-events: auto;
@@ -179,7 +180,7 @@
 
 .product-brandgp {
   font-size: 1rem;
-  color: #417443;
+  color: #2E7D32; /* Verde Fresco (Primario) */
   font-weight: 600;
 }
 
@@ -187,7 +188,7 @@
   font-size: 0.9rem;
   font-weight: 600;
   /* margin: 2px 0 8px; */
-  color: #111827;
+  color: #2E7D32; /* Verde Fresco (Primario) */
 }
 
 .product-containerDeliverygp {
@@ -198,13 +199,13 @@
 
 .productAlertTitlegp {
   font-size: 0.7rem;
-  color: #8d8d8d;
+  color: #999; /* Gris Secundario para párrafos */
   font-weight: 400;
 }
 
 .productAlertIcongp {
   font-size: 0.7rem;
-  color: #f00c0c;
+  color: #F97316; /* Naranja Vital */
 }
 
 .product-container-pricesgp {
@@ -223,12 +224,12 @@
 .name-priceOnlinegp {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #f43c23;
+  color: #F97316; /* Naranja Vital */
 }
 
 .price-Onlinegp {
   font-size: 0.9rem;
-  color: #f43c23;
+  color: #F97316; /* Naranja Vital */
   font-weight: 700;
   /* text-decoration: line-through; */
 }
@@ -245,15 +246,16 @@
 .price-currentRegulargp {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #0c0c0c;
+  color: #999; /* Gris Oscuro (Texto) */
 }
 
 .price-currentgp {
   font-size: 0.8rem;
-  color: #000000;
+  color: #999; /* Gris Oscuro (Texto) */
   font-weight: 400;
   text-decoration: line-through;
 }
+
 /* ==========================
    ANIMACIONES
 ========================== */
@@ -284,16 +286,21 @@
 .generalProducts__card:nth-child(1) {
   --i: 1;
 }
+
 .generalProducts__card:nth-child(2) {
   --i: 2;
 }
+
 .generalProducts__card:nth-child(3) {
   --i: 3;
 }
+
 .generalProducts__card:nth-child(4) {
   --i: 4;
 }
+
 .generalProducts__card:nth-child(5) {
   --i: 5;
 }
+
 /* Puedes seguir agregando más índices si necesitas */

@@ -22,6 +22,7 @@
 }
 
 body {
-  background-color: #e0dfdf;
+  background-color: #F7F7F7; /* Blanco Suave */
+  color: #444444; /* Gris Oscuro (Texto) */
   font-family: system-ui;
 }
