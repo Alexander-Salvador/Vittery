@@ -1,45 +1,77 @@
+/* — Agrupador principal — */
 .header_container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+/* — 1) Call to Action (estático) — */
+.header-calltoaction {
+  background-color: #198754;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* — 2) Wrapper — */
+.header-main-wrapper {
+  /* reserva la altura de tu header-main para evitar saltos */
   height: 5rem;
+}
+
+/* cuando está “pegado”, seguimos reservando la misma altura */
+.header-main-wrapper.stuck {
+  height: 5rem;
+}
+
+/* — 3) Header-main por defecto — */
+.header-main {
   display: flex;
   align-items: center;
-  padding: 1rem 8rem;
-  gap: 1rem;
-  position: sticky;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: none;
+  transform: translateY(0); /* inicio en su sitio */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* — 4) Estado sticky — */
+.header-main.sticky {
+  position: fixed;
   top: 0;
-  background-color: #fff;
+  left: 0;
+  right: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
+  /* ligera elevación visual */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  /* subida suave desde su lugar original */
+  transform: translateY(0);
+}
+
+/* — Contenido interno — */
+.header__mid-separator {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left-items,
+.header-right-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .header-left-items {
-  display: flex;
   width: 40%;
-  align-items: center;
   justify-content: space-between;
 }
 
 .header-right-items {
-  display: flex;
   width: 40%;
-  align-items: center;
-  justify-content: end;
-  gap: 1rem;
+  justify-content: flex-end;
 }
-
-.header__mid-separator {
-  display: flex;
-  width: 20%;
-  align-items: end;
-  justify-content: center;
-}
-
-.header__dropdown-menu {
-  display: none;
-}
-
-/* .header__cart-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */

@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <div className="app">
-        <Header />
+        <div className="header-styles">
+          <Header className="header-component" />
+        </div>
         <AppRouter />
         <Footer />
       </div>
