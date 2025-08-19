@@ -1,11 +1,9 @@
-/* — Agrupador principal — */
 .header_container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-/* — 1) Call to Action (estático) — */
 .header-calltoaction {
   background-color: #198754;
   color: white;
@@ -15,22 +13,13 @@
   font-weight: 500;
 }
 
-/* — 2) Wrapper — */
-.header-main-wrapper {
-  /* reserva la altura de tu header-main para evitar saltos */
-  height: 5rem;
-}
-
-/* cuando está “pegado”, seguimos reservando la misma altura */
-.header-main-wrapper.stuck {
-  height: 5rem;
-}
-
-/* — 3) Header-main por defecto — */
-.header-main {
-  display: flex;
+.header__main-container {
+  width: 100%;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  /* justify-content: start; */
   padding: 1rem 2rem;
   background-color: white;
   box-shadow: none;
@@ -38,40 +27,39 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* — 4) Estado sticky — */
-.header-main.sticky {
+.header__container-logo {
+  /* width: 20%; */
+  /* display: flex; */
+}
+
+.header__container-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.header__container-icons__title {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  gap: 0.3rem;
+}
+/* .header-main-wrapper {
+  height: 5rem;
+}
+
+.header-main-wrapper.stuck {
+  height: 5rem;
+} */
+
+/* .header-main-container.sticky {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  /* ligera elevación visual */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  /* subida suave desde su lugar original */
   transform: translateY(0);
-}
-
-/* — Contenido interno — */
-.header__mid-separator {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-left-items,
-.header-right-items {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.header-left-items {
-  width: 40%;
-  justify-content: space-between;
-}
-
-.header-right-items {
-  width: 40%;
-  justify-content: flex-end;
-}
+} */

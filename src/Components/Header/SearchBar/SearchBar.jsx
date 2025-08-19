@@ -5,7 +5,7 @@ const SearchBar = () => {
   return (
     <div className="search-bar__container">
       <input
-        type="text"
+        type="search"
         placeholder="Buscar productos..."
         className="search-bar__input"
       />
