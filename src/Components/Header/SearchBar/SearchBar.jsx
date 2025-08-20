@@ -6,7 +6,7 @@ const SearchBar = () => {
     <div className="search-bar__container">
       <input
         type="search"
-        placeholder="Buscar productos..."
+        placeholder="Buscar productos, carnes, embutidos..."
         className="search-bar__input"
       />
       <CiSearch className="search-bar__icon" />

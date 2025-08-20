@@ -8,7 +8,7 @@ const NavMenu = () => {
 
   return (
     <ul className="nav__menu-list">
-      <li className="nav__menu-elements">
+      {/* <li className="nav__menu-elements">
         <NavLink className="nav__menu-item" to="/">
           Inicio
         </NavLink>
@@ -18,14 +18,14 @@ const NavMenu = () => {
         <NavLink className="nav__menu-item" to="/hogar">
           Ofertas
         </NavLink>
-      </li>
+      </li> */}
 
       <li
         className="nav__menu-elements nav__menu-categorias"
         onMouseEnter={() => setShowCategories(true)}
         onMouseLeave={() => setShowCategories(false)}>
         <span className="nav__menu-item">
-          Categorías <span>▾</span>
+          ☰ Categorías <span>▾</span>
         </span>
 
         {showCategories && (
@@ -35,11 +35,11 @@ const NavMenu = () => {
         )}
       </li>
 
-      <li className="nav__menu-elements">
+      {/* <li className="nav__menu-elements">
         <NavLink className="nav__menu-item" to="/ropa">
           Beneficios
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 };

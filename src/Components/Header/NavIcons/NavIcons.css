@@ -1,0 +1,110 @@
+/* NavMenu.css - estilos básicos, adapta colores a tu tema */
+:root {
+  --text: #20303a;
+  --muted: #6b7a86;
+  --accent: #0f9d82; /* verde/acento */
+  --hover-bg: rgba(15, 157, 130, 0.06);
+  --border: #e6efed;
+  --gap: 28px;
+}
+
+.navicons__container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial;
+  gap: 12px;
+}
+
+/* center */
+.nav-center {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+.nav-items {
+  display: flex;
+  gap: var(--gap);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.nav-item {
+  margin: 0;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background 160ms ease, color 160ms ease, transform 120ms ease;
+}
+.nav-button:focus {
+  outline: 2px solid rgba(15, 157, 130, 0.16);
+  outline-offset: 2px;
+}
+.nav-button:hover {
+  background: var(--hover-bg);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.nav-icon {
+  font-size: 18px;
+  line-height: 0;
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+}
+.nav-text {
+  display: inline-block;
+}
+
+/* right */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.delivery {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+.delivery-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: rgba(15, 157, 130, 0.12);
+  color: var(--accent);
+  font-size: 14px;
+}
+
+/* responsive: reduce gap on small screens */
+@media (max-width: 720px) {
+  .nav-items {
+    gap: 12px;
+  }
+  .nav-text {
+    display: none;
+  } /* show only icons if quieres compactar */
+}

@@ -16,7 +16,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #2E7D32; /* Verde Fresco (Primario) */
+  font-size: 1.5rem;
+  color: #2e7d32; /* Verde Fresco (Primario) */
   font-weight: 800;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -24,10 +25,10 @@
 }
 
 .link-no-style:hover .nav-logo-title {
-  color: #388E3C; /* Verde Fresco más brillante para hover */
+  color: #388e3c; /* Verde Fresco más brillante para hover */
 }
 
 .nav-logo-icon {
-  /* width: 24px;
-  height: 24px; */
+  width: 24px;
+  height: 24px;
 }

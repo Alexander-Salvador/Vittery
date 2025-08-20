@@ -4,13 +4,12 @@
   justify-content: center;
 }
 .search-bar__input {
-  width: 100%;
+  width: 80%;
   padding: 0.8rem 1rem;
-  border-radius: 10px;
   border: none;
   background-color: rgb(243, 243, 243);
   color: #575757;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid #dedddd;
   font-family: sans-serif;
   font-size: 1rem;
@@ -27,8 +26,8 @@
 .search-bar__icon {
   font-size: 1.8rem;
   transition: color 0.3s ease;
-  color: #646464;
-  /* margin-right: -40px; */
+  color: #afafaf;
+  margin-left: -40px;
   z-index: 10;
   cursor: pointer;
 }

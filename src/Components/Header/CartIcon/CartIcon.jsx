@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import { CiShoppingCart } from 'react-icons/ci';
+import { IoCartOutline } from 'react-icons/io5';
+
 import './CartIcon.css';
 
 const CartIcon = () => {
   return (
     <div className="cartIcon-container">
       <Link to="/cart">
-        <CiShoppingCart className="cartIcon-icon" />
-        <span className="cartIcon-text"></span>
+        <IoCartOutline className="cartIcon-icon" />
       </Link>
     </div>
   );

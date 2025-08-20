@@ -1,0 +1,10 @@
+.notification-container {
+}
+
+.notification-icon {
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #2e7153;
+}
