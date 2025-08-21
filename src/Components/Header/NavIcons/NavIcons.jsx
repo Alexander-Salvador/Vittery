@@ -16,7 +16,7 @@ const items = [
 const NavIcons = () => {
   return (
     <div className="navicons__container-wrapper">
-      <nav className="nav-center" aria-label="Main navigation">
+      <nav className="navicons-center" aria-label="Main navigation">
         <ul className="nav-items">
           {items.map((it) => (
             <li key={it.key} className="nav-item">

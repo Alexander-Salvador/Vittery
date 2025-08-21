@@ -1,6 +1,5 @@
 .nav__menu-list {
   display: flex;
-  /* gap: 1rem; */
   list-style: none;
   position: relative;
 }
@@ -9,7 +8,7 @@
   font-size: 1.1rem;
   font-family: system-ui;
   font-weight: 500;
-  color: #333333; /* Gris Oscuro (Texto) */
+  color: #6b7a86; /* Gris Oscuro (Texto) */
   text-decoration: none;
   padding: 0.5rem 1rem;
   position: relative;
@@ -19,7 +18,7 @@
 }
 
 .nav__menu-item:hover {
-  color: #2E7D32; /* Verde Fresco (Primario) */
+  color: #2e7d32; /* Verde Fresco (Primario) */
 }
 
 /* Efecto de subrayado dinámico */
@@ -31,7 +30,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2E7D32; /* Verde Fresco (Primario) */
+  background-color: #2e7d32; /* Verde Fresco (Primario) */
   transform-origin: center;
   transition: transform 0.3s ease-out;
 }
@@ -42,7 +41,7 @@
 
 /* Estilo para el NavLink activo */
 .nav__menu-item.active {
-  color: #2E7D32; /* Verde Fresco (Primario) */
+  color: #2e7d32; /* Verde Fresco (Primario) */
   font-weight: 700;
 }
 

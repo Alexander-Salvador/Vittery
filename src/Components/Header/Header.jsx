@@ -8,6 +8,7 @@ import NotificationIcon from './Notifications/NotificationIcon';
 import './Header.css';
 import NavMenu from './NavMenu/NavMenu';
 import NavIcons from './NavIcons/NavIcons';
+import { FaShippingFast } from 'react-icons/fa';
 
 const Header = () => {
   const wrapperRef = useRef(null);
@@ -29,11 +30,11 @@ const Header = () => {
         <div className="header-delivery-title">
           <h3>🚚 Envío gratis en compras mayores a S/99.90</h3>
         </div>
+        {/* <div className="header-delivery-title">
+          <h3>🔒 Compra 100% segura</h3>
+        </div> */}
         <div className="header-delivery-title">
           <h3>📦 Supermercado de confianza www.Vitterys.com</h3>
-        </div>
-        <div className="header-delivery-title">
-          <h3>🔒 Compra 100% segura</h3>
         </div>
       </div>
 
@@ -69,11 +70,18 @@ const Header = () => {
         <div className="header-delivery-title">
           <NavMenu />
         </div>
+
         <div className="header-delivery-title">
           <NavIcons />
         </div>
-        <div className="header-delivery-title">
-          <h3>🔒 Compra 100% segura</h3>
+
+        <div className="header-container-delivery">
+          <div className="header-delivery-icon">
+            <FaShippingFast className="header-delivery-icono" />
+            <span className="header-delivery-text">
+              Entrega dentro de las 24 horas
+            </span>
+          </div>
         </div>
       </div>
     </div>

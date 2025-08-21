@@ -76,10 +76,24 @@
 } */
 
 .header__container-navMenu {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   justify-content: space-between;
-  background-color: #158d55;
-  color: white;
-  padding: 0.5rem 8.5rem;
+  padding: 0.6rem 9rem;
+}
+
+.header-delivery-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  column-gap: 0.5rem;
+}
+.header-delivery-icono {
+  color: #6b7a86;
+}
+
+.header-delivery-text {
+  color: #6b7a86;
 }
