@@ -1,31 +1,34 @@
-/* NavMenu.css - estilos básicos, adapta colores a tu tema */
 :root {
   --text: #20303a;
   --muted: #6b7a86;
-  --accent: #0f9d82; /* verde/acento */
+  --accent: #0f9d82;
   --hover-bg: rgba(15, 157, 130, 0.06);
   --border: #e6efed;
   --gap: 28px;
+  --transition-fast: 160ms;
+  --transition-mid: 220ms;
 }
 
+/* Wrapper */
 .navicons__container-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
+  justify-content: center; /* centra el nav */
   border-bottom: 1px solid var(--border);
+  padding: 6px 0;
+  background: transparent;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial;
-  gap: 12px;
+    'Helvetica Neue', Arial, sans-serif;
 }
 
-/* center */
-.navicons-center {
+/* Nav + lista */
+.nav__icons-mid {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
 }
-.nav-items {
+
+.nav__icons-items {
   display: flex;
   gap: var(--gap);
   list-style: none;
@@ -33,78 +36,89 @@
   padding: 0;
   align-items: center;
 }
-.nav-item {
+
+/* Li */
+.nav__icon-li {
   margin: 0;
 }
 
-.nav-button {
+/* Enlace estilizado (reemplaza al botón) */
+.nav__icons-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  color: var(--muted);
   padding: 8px 10px;
   border-radius: 8px;
-  transition: background 160ms ease, color 160ms ease, transform 120ms ease;
-}
-.nav-button:focus {
-  outline: 2px solid rgba(15, 157, 130, 0.16);
-  outline-offset: 2px;
-}
-.nav-button:hover {
-  background: var(--hover-bg);
-  color: var(--text);
-  transform: translateY(-1px);
-}
-
-.nav-icon {
-  font-size: 18px;
-  line-height: 0;
-  display: inline-flex;
-  align-items: center;
-  color: inherit;
-}
-.nav-text {
-  display: inline-block;
-}
-
-/* right */
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.delivery {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
+  background: transparent;
+  border: 1px solid transparent; /* reserva espacio si quisieras borde */
   color: var(--muted);
-  padding: 6px 10px;
-  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform var(--transition-mid) cubic-bezier(0.2, 0.9, 0.2, 1),
+    background var(--transition-fast) ease, color var(--transition-fast) ease;
+  will-change: transform, background-color;
+  cursor: pointer;
 }
 
-.delivery-icon {
+/* Focus accesible */
+.nav__icons-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(15, 157, 130, 0.08);
+  border-radius: 8px;
+}
+
+/* Hover / focus: suave desplazamiento hacia la derecha (sin afectar layout) */
+.nav__icons-button:hover,
+.nav__icons-button:focus {
+  transform: translateX(3px);
+  background: var(--hover-bg);
+  color: #1e8a3a;
+}
+
+/* Icono */
+.nav__icon-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background: rgba(15, 157, 130, 0.12);
-  color: var(--accent);
+  font-size: 14px;
+  color: inherit; /* hereda color para que cambie en hover */
+  line-height: 0;
+  transition: transform var(--transition-mid) cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+/* Texto */
+.navicon__text {
+  display: inline-block;
+  transition: transform var(--transition-mid) cubic-bezier(0.2, 0.9, 0.2, 1),
+    color var(--transition-fast) ease;
+  transform: translateX(0);
   font-size: 14px;
 }
 
-/* responsive: reduce gap on small screens */
+/* Opcional: mover icon y texto de forma ligera y escalonada */
+.nav__icons-button:hover .nav__icon-span {
+  transform: translateX(5px);
+}
+.nav__icons-button:hover .navicon__text {
+  transform: translateX(6px);
+}
+
+/* Responsive: oculta texto en pantallas pequeñas para compactar */
 @media (max-width: 720px) {
-  .nav-items {
+  .nav__icons-items {
     gap: 12px;
   }
-  .nav-text {
+  .navicon__text {
     display: none;
-  } /* show only icons if quieres compactar */
+  }
+}
+
+/* Respecta preferencia de reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .nav__icons-button,
+  .nav__icon-span,
+  .navicon__text {
+    transition: none !important;
+    transform: none !important;
+  }
 }

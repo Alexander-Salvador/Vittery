@@ -1,51 +1,45 @@
 import './NavIcons.css';
-import {
-  FaChartLine,
-  FaBolt,
-  FaClock,
-  FaStar,
-} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaChartLine, FaBolt, FaClock, FaStar } from 'react-icons/fa';
 
 const items = [
-  { key: 'trending', icon: <FaChartLine />, label: 'Trending' },
-  { key: 'new', icon: <FaBolt />, label: 'New Arrivals' },
-  { key: 'deals', icon: <FaClock />, label: 'Daily Deals' },
-  { key: 'featured', icon: <FaStar />, label: 'Featured' },
+  {
+    key: 'tendencias',
+    icon: <FaChartLine />,
+    label: 'Tendencias',
+    to: '/tendencias',
+  },
+  { key: 'nuevos', icon: <FaBolt />, label: 'Nuevos', to: '/nuevos' },
+  { key: 'ofertas', icon: <FaClock />, label: 'Ofertas', to: '/ofertas' },
+  {
+    key: 'destacados',
+    icon: <FaStar />,
+    label: 'Destacados',
+    to: '/destacados',
+  },
 ];
 
 const NavIcons = () => {
   return (
     <div className="navicons__container-wrapper">
-      <nav className="navicons-center" aria-label="Main navigation">
-        <ul className="nav-items">
+      <nav className="nav__icons-mid" aria-label="Navegación principal">
+        <ul className="nav__icons-items">
           {items.map((it) => (
-            <li key={it.key} className="nav-item">
-              <button
-                className="nav-button"
+            <li key={it.key} className="nav__icon-li">
+              <Link
+                to={it.to}
+                className="nav__icons-button"
                 aria-label={it.label}
-                title={it.label}
-                type="button">
-                <span className="nav-icon" aria-hidden="true">
+                title={it.label}>
+                <span className="nav__icon-span" aria-hidden="true">
                   {it.icon}
                 </span>
-                <span className="nav-text">{it.label}</span>
-              </button>
+                <span className="navicon__text">{it.label}</span>
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
-
-      {/* <div className="nav-right">
-        <div
-          className="delivery"
-          role="status"
-          aria-label="Delivery within 24 hours">
-          <span className="delivery-icon" aria-hidden="true">
-            <FaShippingFast />
-          </span>
-          <span className="delivery-text">Delivery within 24 hours</span>
-        </div>
-      </div> */}
     </div>
   );
 };

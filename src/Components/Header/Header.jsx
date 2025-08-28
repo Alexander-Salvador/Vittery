@@ -51,10 +51,9 @@ const Header = () => {
 
         <div className="header__container-icons">
           <div className="header__account-titles">
-            <h3 className="header__container-icons__title">
-              <AuthButtons />
-              Account
-            </h3>
+            {/* <h3 className="header__container-icons__title"> */}
+            <AuthButtons />
+            {/* </h3> */}
           </div>
           <div className="header__notificationIcon">
             <NotificationIcon />
@@ -78,9 +77,7 @@ const Header = () => {
         <div className="header-container-delivery">
           <div className="header-delivery-icon">
             <FaShippingFast className="header-delivery-icono" />
-            <span className="header-delivery-text">
-              Entrega dentro de las 24 horas
-            </span>
+            <span className="header-delivery-text">Entrega Rapida</span>
           </div>
         </div>
       </div>

@@ -4,24 +4,31 @@
   justify-content: center;
 }
 
-.nav__logo-grid {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #f5f5f5; */
-  grid-template-columns: 2rem 12rem;
-  /* grid-template-rows: 10px 20px; */
-}
-
 .link-no-style {
   text-decoration: none;
   color: inherit; /* conserva el color del h1 */
   display: inline-block; /* asegura que no rompa el layout */
 }
 
+.nav__logo-grid {
+  display: grid;
+  align-items: end;
+  justify-content: center;
+  grid-template-columns: 2rem 12rem;
+  justify-items: center;
+}
+
+.nav__logo-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #25a541;
+}
+
 .nav__logo-title {
-  font-size: 1rem;
-  color: #2e7d32; /* Verde Fresco (Primario) */
+  font-size: 1.2rem;
+  color: #25a541;
   font-weight: 800;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -30,16 +37,10 @@
 
 .nav__logo-subtitle {
   font-size: 0.8rem;
-  color: #6b7a86;
+  color: #6d727a;
   font-weight: 400;
 }
 
 .link-no-style:hover .nav-logo-title {
   color: #388e3c; /* Verde Fresco más brillante para hover */
-}
-
-.nav__logo-icon {
-  width: 24px;
-  height: 24px;
-  color: #1e8a3a;
 }

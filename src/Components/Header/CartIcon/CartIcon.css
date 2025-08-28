@@ -1,16 +1,14 @@
-.cartIcon-container {
+.header__cartIcon-container {
 }
 
-.cartIcon-icon {
+.header__cartIcon-icon {
   align-items: center;
   justify-content: center;
   margin-right: 0.5rem;
-  font-size: 2rem;
-  color: #2e7153;
+  font-size: 1.6rem;
+  color: #666768;
 }
 
-.cartIcon-text {
-  font-size: 18px;
-  font-family: system-ui;
-  font-weight: 600;
+.header__cartIcon-icon:hover {
+  color: #1e8a3a;
 }

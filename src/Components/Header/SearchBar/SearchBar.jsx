@@ -3,13 +3,13 @@ import './SearchBar.css';
 
 const SearchBar = () => {
   return (
-    <div className="search-bar__container">
+    <div className="header__container-search">
       <input
-        type="search"
-        placeholder="Buscar productos, carnes, embutidos..."
-        className="search-bar__input"
+        type="text"
+        placeholder="Buscar productos: carnes, embutidos..."
+        className="header__search-bar__input"
       />
-      <CiSearch className="search-bar__icon" />
+      <CiSearch className="headwer__search-bar__icon" />
     </div>
   );
 };
