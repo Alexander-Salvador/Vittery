@@ -81,13 +81,12 @@
   height: 40px;
   width: 100%;
   display: grid;
-  align-content: center;
   align-items: center;
+  align-content: center;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  padding: 0rem 2rem;
-  /* background-color: red; */
+  column-gap: 2rem;
 }
 
 /* estado base: color inicial y transición */

@@ -2,6 +2,7 @@
   display: flex;
   list-style: none;
   position: relative;
+  /* background-color: red; */
 }
 
 .nav__menu-item {
@@ -13,9 +14,9 @@
   text-decoration: none;
   padding: 0.8rem 0rem;
   position: relative;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease-in-out;
   cursor: pointer;
-  column-gap: 0.2rem;
+  column-gap: 0.5rem;
 }
 
 .nav__menu-item-text {
@@ -23,6 +24,7 @@
   color: #5f5f5f;
   font-weight: 500;
   letter-spacing: 1px;
+  font-family: system-ui;
 }
 
 .nav__menu-item-drowmenu {
@@ -38,7 +40,19 @@
 }
 
 .nav__menu-item:hover {
-  color: #2e7d32; /* Verde Fresco (Primario) */
+  color: #1e8a3a;
+}
+
+/* Activo cuando el dropdown está abierto */
+.nav__menu-item.active {
+  color: #1e8a3a;
+}
+
+/* Esto hace que íconos y texto hereden el color */
+.nav__menu-item svg,
+.nav__menu-item h2 {
+  color: inherit;
+  transition: color 0.2s ease-in-out;
 }
 
 /* Efecto de subrayado dinámico */
@@ -50,7 +64,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2e7d32; /* Verde Fresco (Primario) */
+  background-color: #1e8a3a; /* Verde Fresco (Primario) */
   transform-origin: center;
   transition: transform 0.3s ease-out;
 }
@@ -61,7 +75,7 @@
 
 /* Estilo para el NavLink activo */
 .nav__menu-item.active {
-  color: #2e7d32; /* Verde Fresco (Primario) */
+  color: #1e8a3a; /* Verde Fresco (Primario) */
   font-weight: 700;
 }
 
@@ -73,6 +87,16 @@
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: 8px;
-  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  z-index: 1000;
+}
+
+.nav__menu-elements:hover .nav__menu-category-dropdown,
+.nav__menu-category-dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
