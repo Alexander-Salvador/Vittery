@@ -7,7 +7,7 @@ const Banner = () => {
     <section
       className="banner__container-general"
       role="region"
-      aria-label="Promoción destacada de Viterrys">
+      aria-label="Promoción destacada de Viterrysd">
       <div className="banner__grid">
         {/* Columna izquierda */}
         <div className="banner__left">
