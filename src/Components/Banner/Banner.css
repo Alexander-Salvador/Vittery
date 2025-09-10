@@ -1,17 +1,19 @@
 .banner__container-general {
   width: 100%;
-  background: #f4faf5;
+  /* max-width: 1250px; */
+  /* background: #cacaca; */
   display: flex;
   justify-content: center;
+  /* gap: 1rem; */
 }
 
 .banner__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1200px;
   align-items: center;
-  gap: 3rem;
+  column-gap: 4rem;
 }
 
 /* ----- Columna Izquierda ----- */
@@ -118,6 +120,7 @@
 /* ----- Columna Derecha ----- */
 .banner__right {
   position: relative;
+  /* background-color: #1a5d3f; */
 }
 
 .banner__image-wrapper {
@@ -125,11 +128,13 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  background-color: red;
+
 }
 
 .banner__image {
   width: 100%;
+  max-width: 650px;
+  height: 520px;
   display: block;
   object-fit: cover;
 }

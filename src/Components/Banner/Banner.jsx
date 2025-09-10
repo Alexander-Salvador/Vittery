@@ -7,7 +7,7 @@ const Banner = () => {
     <section
       className="banner__container-general"
       role="region"
-      aria-label="Promoción destacada de Viterrysd">
+      aria-label="Promoción destacada de Viterrys">
       <div className="banner__grid">
         {/* Columna izquierda */}
         <div className="banner__left">
@@ -58,7 +58,9 @@ const Banner = () => {
         </div>
 
         {/* Columna derecha */}
+
         <div className="banner__right">
+          
           <div className="banner__image-wrapper">
             <img
               src="/images/Banner/banner-especial.jpg"
@@ -90,8 +92,10 @@ const Banner = () => {
                 <p>Calidad garantizada</p>
               </div>
             </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );

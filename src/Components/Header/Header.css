@@ -87,6 +87,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   column-gap: 2rem;
+  background-color: #fff;
 }
 
 /* estado base: color inicial y transición */
